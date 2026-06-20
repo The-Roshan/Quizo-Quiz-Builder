@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quizo HTML Template - V.13</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+   <div class="wrapper position-relative overflow-hidden">
+      <!-- Top content -->
+      <div class="container-fluid p-0">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="logo_area mt-5 ms-5">
+                  <a href="index.html">
+                     <img src="./assets/images/logo/logo.png" alt="image_not_found">
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+               <div class="clock_area countdown_timer position-relative mt-5 me-5 float-end" data-countdown="2022/10/24">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <form class="multisteps_form" id="wizard" method="POST" action="../thankyou/index-1.html">
+            <!------------------------- Step-1 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="content_box position-relative text-center bg-white py-5 position-relative">
+                     <div class="form_question_mark rounded-pill position-absolute">
+                        <span>?</span>
+                     </div>
+                     <div class="question_title py-4 text-white text-uppercase">
+                        <h1>Q1. Which is the Smallest country in the world</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-cols-2 mt-5 form_items">
+                  <div class="col">
+                     <div class="card float-end box_1">
+                        <div class="card-body">
+                           <label class="step_1 position-relative text-center" for="opt_1">
+                              <div class="card-title text-white">Egypt</div>
+                              <span class="position-absolute rounded-pill bg-white">1</span>
+                              <input type="radio" id="opt_1" name="stp_1_select_option" value="Egypt">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start">
+                        <div class="card-body box_2">
+                           <label class="step_1 position-relative text-center active" for="opt_2">
+                              <div class="card-title text-white">Singapore</div>
+                              <span class="position-absolute rounded-pill bg-white">2</span>
+                              <input type="radio" id="opt_2" name="stp_1_select_option" value="Singapore" checked>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-end mt-5">
+                        <div class="card-body box_3">
+                           <label class="step_1 position-relative text-center" for="opt_3">
+                              <div class="card-title text-white">Vatican City</div>
+                              <span class="position-absolute rounded-pill bg-white">3</span>
+                              <input type="radio" id="opt_3" name="stp_1_select_option" value="Vatican City">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start mt-5">
+                        <div class="card-body box_4">
+                           <label class="step_1 position-relative text-center" for="opt_4">
+                              <div class="card-title text-white">France</div>
+                              <span class="position-absolute rounded-pill bg-white">4</span>
+                              <input type="radio" id="opt_4" name="stp_1_select_option" value="France">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!------------------------- Step-2 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="content_box position-relative text-center bg-white py-5 position-relative">
+                     <div class="form_question_mark rounded-pill position-absolute">
+                        <span>?</span>
+                     </div>
+                     <div class="question_title py-4 text-white text-uppercase">
+                        <h1>Q2. The luminous coloured ring, surrounding the sun is called the</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-cols-2 mt-5 form_items">
+                  <div class="col">
+                     <div class="card float-end box_1">
+                        <div class="card-body">
+                           <label class="step_2 position-relative text-center" for="opt_5">
+                              <div class="card-title text-white">Nebula</div>
+                              <span class="position-absolute rounded-pill bg-white">1</span>
+                              <input type="radio" id="opt_5" name="stp_2_select_option" value="Nebula">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start">
+                        <div class="card-body box_2">
+                           <label class="step_2 position-relative text-center" for="opt_6">
+                              <div class="card-title text-white">Corona</div>
+                              <span class="position-absolute rounded-pill bg-white">2</span>
+                              <input type="radio" id="opt_6" name="stp_2_select_option" value="Corona" checked>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-end mt-5">
+                        <div class="card-body box_3">
+                           <label class="step_2 position-relative text-center" for="opt_7">
+                              <div class="card-title text-white">Comet</div>
+                              <span class="position-absolute rounded-pill bg-white">3</span>
+                              <input type="radio" id="opt_7" name="stp_2_select_option" value="Comet">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start mt-5">
+                        <div class="card-body box_4">
+                           <label class="step_2 position-relative text-center" for="opt_8">
+                              <div class="card-title text-white">Asteroid</div>
+                              <span class="position-absolute rounded-pill bg-white">4</span>
+                              <input type="radio" id="opt_8" name="stp_2_select_option" value="Asteroid">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!------------------------- Step-3 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="content_box position-relative text-center bg-white py-5 position-relative">
+                     <div class="form_question_mark rounded-pill position-absolute">
+                        <span>?</span>
+                     </div>
+                     <div class="question_title py-4 text-white text-uppercase">
+                        <h1>Q3.The most recent era of the geological time scale is</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-cols-2 mt-5 form_items">
+                  <div class="col">
+                     <div class="card float-end box_1">
+                        <div class="card-body">
+                           <label class="step_3 position-relative text-center" for="opt_9">
+                              <div class="card-title text-white">Mesozoic</div>
+                              <span class="position-absolute rounded-pill bg-white">1</span>
+                              <input type="radio" id="opt_9" name="stp_3_select_option" value="Mesozoic">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start">
+                        <div class="card-body box_2">
+                           <label class="step_3 position-relative text-center" for="opt_10">
+                              <div class="card-title text-white">Cenozoic</div>
+                              <span class="position-absolute rounded-pill bg-white">2</span>
+                              <input type="radio" id="opt_10" name="stp_3_select_option" value="Cenozoic" checked>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-end mt-5">
+                        <div class="card-body box_3">
+                           <label class="step_3 position-relative text-center" for="opt_11">
+                              <div class="card-title text-white">Triassic</div>
+                              <span class="position-absolute rounded-pill bg-white">3</span>
+                              <input type="radio" id="opt_11" name="stp_3_select_option" value="Triassic">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start mt-5">
+                        <div class="card-body box_4">
+                           <label class="step_3 position-relative text-center" for="opt_12">
+                              <div class="card-title text-white">Paleocene</div>
+                              <span class="position-absolute rounded-pill bg-white">4</span>
+                              <input type="radio" id="opt_12" name="stp_3_select_option" value="Paleocene">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!------------------------- Step-4 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="content_box position-relative text-center bg-white py-5 position-relative">
+                     <div class="form_question_mark rounded-pill position-absolute">
+                        <span>?</span>
+                     </div>
+                     <div class="question_title py-4 text-white text-uppercase">
+                        <h1>Q4. The minerals of sulphide group are</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="row row-cols-2 mt-5 form_items">
+                  <div class="col">
+                     <div class="card float-end box_1">
+                        <div class="card-body">
+                           <label class="step_4 position-relative text-center" for="opt_13">
+                              <div class="card-title text-white">Galena</div>
+                              <span class="position-absolute rounded-pill bg-white">1</span>
+                              <input type="radio" id="opt_13" name="stp_4_select_option" value="Galena">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start">
+                        <div class="card-body box_2">
+                           <label class="step_4 position-relative text-center" for="opt_2">
+                              <div class="card-title text-white">All of the above</div>
+                              <span class="position-absolute rounded-pill bg-white">2</span>
+                              <input type="radio" id="opt_2" name="stp_4_select_option" value="All of the above" checked>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-end mt-5">
+                        <div class="card-body box_3">
+                           <label class="step_4 position-relative text-center" for="opt_3">
+                              <div class="card-title text-white">Pyrite</div>
+                              <span class="position-absolute rounded-pill bg-white">3</span>
+                              <input type="radio" id="opt_3" name="stp_4_select_option" value="Pyrite">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="card float-start mt-5">
+                        <div class="card-body box_4">
+                           <label class="step_4 position-relative text-center" for="opt_4">
+                              <div class="card-title text-white">Cinnabar</div>
+                              <span class="position-absolute rounded-pill bg-white">4</span>
+                              <input type="radio" id="opt_4" name="stp_4_select_option" value="Cinnabar">
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+         <!-- Service img -->
+         <div class="service_img">
+            <img class="position-absolute" src="./assets/images/background/bg_1.png" alt="image_not_found">
+         </div>
+         <!-- Step-progress -->
+         <div class="step_progress position-absolute">
+            <div class="step position-relative text-center rounded-pill bg-white active">1</div>
+            <div class="step position-relative text-center rounded-pill bg-white mt-5">2</div>
+            <div class="step position-relative text-center rounded-pill bg-white mt-5">3</div>
+            <div class="step position-relative text-center rounded-pill bg-white mt-5">4</div>
+         </div>
+         <!------------------------- Form button ----------------------------->
+         <div class="row float-end my-5">
+            <div>
+               <button type="button" class="f_btn prev_btn text-uppercase position-absolute" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+                  Question</button>
+               </div>
+               <div>
+                  <button type="button" class="f_btn next_btn text-uppercase position-absolute" id="nextBtn"
+                  onclick="nextPrev(1)">Next</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery-js include -->
+      <script src="./assets/js/jquery-3.6.0.min.js"></script>
+      <!-- jQuery-js include -->
+      <script src="./assets/js/countdown.js"></script>
+      <!-- Bootstrap-js include -->
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <!-- jQuery-validate-js include -->
+      <script src="./assets/js/jquery.validate.min.js"></script>
+      <!-- Custom-js include -->
+      <script src="./assets/js/script.js"></script>
+   </body>
+   
+   </html>

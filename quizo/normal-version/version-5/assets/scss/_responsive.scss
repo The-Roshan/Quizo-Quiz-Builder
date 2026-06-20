@@ -1,0 +1,291 @@
+/* ==================================================
+*	01 - media screen and (max-width: 991px)
+*	02 - media screen and (max-width: 767px)
+*	03 - media screen and (max-width: 575px)
+*	04 - media screen and (max-width: 380px)
+*	05 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .logo_area{
+        padding-left: 0rem!important;
+    }
+    .count_box{
+        margin-right: 0rem!important;
+    }
+    .count_title{
+        h4{
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        span{
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    }
+    .count_number{
+        width: 12rem;
+        .count_hours,
+        .count_min,
+        .count_sec{
+            h3{
+                font-size: 1.35rem;
+                font-weight: 700;
+            }
+            span{
+                font-size: 1rem;
+                font-weight: 700;
+                padding-left: 0rem;
+            }
+            &:after{
+                right: 66px;
+            }
+            &:before{
+                left: 68px;
+            }
+        }
+    }
+    .multisteps_form{
+        max-width: 86rem;
+        min-height: 43rem;
+    }
+    .question_title{
+        h1{
+            font-size: 1.3875rem;
+            padding: 3.5rem 1rem!important;
+        }
+    }
+    .row {
+        li {
+            width: 40%;
+            font-size: 1.175rem;
+            padding: 1.25rem 2rem;
+            font-weight: 700;
+            &:after {
+                height: 2.3rem;
+                width: 2.3rem;
+            }
+            &:before {
+                font-size: 1.1375rem;
+                line-height: 1;
+            }
+            label{
+                padding-left: 1.5rem;
+            }
+        }
+    }
+    .step_progress{
+        bottom: 19px;
+        span{
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+    .progress{
+        max-width: 17rem;
+    }
+    .f_btn{
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.7375rem 1.2625rem;
+    }
+}
+// media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .logo_area{
+        text-align: center;
+        display: block;
+    }
+    .count_title{
+        h4{
+            font-size: 0.7rem;
+            font-weight: 500;
+            padding-right: 0.2rem;
+        }
+    }
+    .count_number{
+        width: 12rem;
+        height: 3.5rem;
+        .count_hours,
+        .count_min,
+        .count_sec{
+            h3{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            span{
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+            &:after{
+                top: 8px;
+                right: 51px;
+            }
+            &:before{
+                top: 8px;
+                left: 48px;
+            }
+        }
+    }
+    .multisteps_form{
+        max-width: 83rem;
+        min-height: 40rem;
+    }
+    .question_title{
+        h1{
+            font-size: 1rem;
+            padding: 3rem 1rem!important;
+        }
+    }
+    .row {
+        li {
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            span{
+                left: 25px;
+            }
+            &:after {
+                height: 2rem;
+                width: 2rem;
+            }
+            &:before {
+                font-size: 1rem;
+                line-height: 0.8;
+            }
+        }
+    }
+    .step_progress{
+        span{
+            font-size: 0.6rem;
+            font-weight: 500;
+        }
+    }
+    .progress{
+        max-width: 15rem;
+    }
+    .f_btn{
+        font-size: 0.6rem;
+        font-weight: 600;
+        padding: 0.5375rem 0.4rem;
+    }
+}
+// media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .logo_area{
+        text-align: center;
+        padding-left: 0rem!important;
+    }
+    .multisteps_form{
+        max-width: 81rem;
+        min-height: 38rem;
+    }
+    .question_title{
+        h1{
+            font-size: 0.8rem;
+            padding: 2rem 0.8rem!important;
+        }
+    }
+    .row {
+        li {
+            font-size: 0.8rem;
+            padding: 1rem 2rem;
+            font-weight: 500;
+            span{
+                left: 24px;
+            }
+            &:after {
+                height: 1.8rem;
+                width: 1.8rem;
+            }
+            &:before {
+                font-size: 0.8rem;
+                line-height: 0.7;
+            }
+        }
+    }
+    .step_progress{
+        bottom: 28px;
+        span{
+            font-size: 0.8rem;
+        }
+    }
+    .progress{
+        max-width: 9rem;
+        min-height: 0.7rem;
+    }
+}
+// media screen and (max-width: 380px)
+@media screen and(max-width: 379.98px){
+    .multisteps_form{
+        max-width: 79rem;
+        min-height: 33rem;
+    }
+    .question_title{
+        h1{
+            font-size: 0.8rem;
+            padding: 1.5rem 0.8rem!important;
+        }
+    }
+    .row {
+        li {
+            font-size: 0.6rem;
+            padding: 0.7rem 0rem;
+            padding-left: 2rem;
+            font-weight: 500;
+            &:after {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            &:before {
+                font-size: 0.5rem;
+            }
+        }
+    }
+    .step_progress{
+        span{
+            font-size: 0.7rem;
+        }
+    }
+    .f_btn{
+        font-size: 0.5rem;
+        padding: 0.3375rem 0.8rem;
+    }
+}
+// media screen and (max-width: 320px)
+@media screen and(max-width: 319.98px){
+    .multisteps_form{
+        min-height: 32rem;
+    }
+    .question_title{
+        h1{
+            padding: 1rem 0.8rem!important;
+        }
+    }
+    .row {
+        li {
+            font-size: 0.6rem;
+            padding: 0.6rem 0rem;
+            padding-left: 2rem;
+            span{
+                left: 22px;
+            }
+            &:after {
+                height: 1.3rem;
+                width: 1.3rem;
+            }
+            &:before {
+                font-size: 0.4rem;
+            }
+        }
+    }
+    .progress{
+        max-width: 8rem;
+    }
+    .f_btn{
+        font-size: 0.5rem;
+        padding: 0.3375rem 0.6rem;
+    }
+}

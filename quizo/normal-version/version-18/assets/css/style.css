@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 120vh;
+  background-image: url("../images/background/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.count_clock img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.count_clock span {
+  width: 120px;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#4285ec, #0cb9fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.question_title h1 {
+  color: #151515;
+  font-size: 3.125rem;
+}
+
+.form_items {
+  margin-bottom: 10rem;
+}
+.form_items label {
+  width: 100%;
+  cursor: pointer;
+}
+.form_items label:before {
+  content: "";
+  top: 15%;
+  left: 29px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  color: #107eeb;
+  font-size: 1.5rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: none;
+}
+.form_items label:after {
+  content: "";
+  top: 15%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e0e0e0;
+  border-radius: 100px;
+  font-weight: 900;
+}
+.form_items label.active:before {
+  display: block;
+}
+.form_items label input {
+  display: none;
+}
+.form_items label img {
+  width: 100%;
+}
+
+.f_btn {
+  font-size: 1rem;
+  padding: 1.3rem 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.prev_btn {
+  bottom: 30px;
+  left: 27%;
+  background-color: #214466;
+}
+.prev_btn:hover {
+  background-color: #107eeb;
+}
+
+.next_btn {
+  bottom: 30px;
+  right: 27%;
+  background-color: #107eeb;
+}
+.next_btn:hover {
+  background-color: #214466;
+}
+
+body {
+  line-height: 1.65;
+  font-display: swap;
+  font-family: "Russo One", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* transition - start
+================================================== */
+a,
+button {
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end
+================================================== */
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_75ms {
+  -webkit-animation-delay: 75ms;
+          animation-delay: 75ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.animate_125ms {
+  -webkit-animation-delay: 125ms;
+          animation-delay: 125ms;
+}
+
+.animate_150ms {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1200px)
+*	02 - media screen and (max-width: 992px)
+*	03 - media screen and (max-width: 768px)
+*	04 - media screen and (max-width: 576px)
+*	05 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1199.98px) {
+  .question_title h1 {
+    font-size: 2.5rem;
+  }
+
+  .form_items label:before {
+    top: 17%;
+  }
+  .form_items label:after {
+    top: 17%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .question_title h1 {
+    font-size: 2rem;
+  }
+
+  .form_items label:before {
+    top: 21%;
+  }
+  .form_items label:after {
+    top: 21%;
+  }
+
+  .f_btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .logo_area {
+    text-align: center;
+    margin-left: 0rem !important;
+  }
+
+  .question_title h1 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .prev_btn {
+    left: 22%;
+  }
+
+  .next_btn {
+    right: 22%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .form_items label:before {
+    top: 14%;
+  }
+  .form_items label:after {
+    top: 14%;
+  }
+
+  .f_btn {
+    padding: 0.8rem 1rem;
+  }
+
+  .prev_btn {
+    left: 5%;
+  }
+
+  .next_btn {
+    right: 5%;
+  }
+}

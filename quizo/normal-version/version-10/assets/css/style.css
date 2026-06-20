@@ -1,0 +1,411 @@
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.steps_area {
+  width: 35%;
+  position: relative;
+}
+
+.image_holder img {
+  width: 100%;
+  height: 100vh;
+}
+
+.form_wrapper {
+  background-image: url("../images/background/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+.count_clock img {
+  width: 2.8125rem;
+}
+
+.count_number span {
+  font-size: 3.125rem;
+  background: -webkit-linear-gradient(#c82090, #6a14d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+.question_title h1 {
+  width: 80%;
+  font-size: 2.359375rem;
+  padding: 2rem 4rem;
+  margin: 0 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#c82090), to(#6a14d1));
+  background: linear-gradient(to right, #c82090, #6a14d1);
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.form_items {
+  width: 65%;
+  margin: 0 auto;
+}
+
+label {
+  width: 100%;
+  color: #0d1424;
+  font-size: 1.81125rem;
+  padding: 1rem;
+  border: 3px solid #0d1424;
+  cursor: pointer;
+}
+label input {
+  display: none;
+}
+label.active {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#c82090), to(#6a14d1));
+  background: linear-gradient(to right, #c82090, #6a14d1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.progress {
+  width: 100%;
+  height: 1.25rem;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+.progress .progress-bar {
+  background: -webkit-gradient(linear, left top, right top, from(#c82090), to(#6a14d1));
+  background: linear-gradient(to right, #c82090, #6a14d1);
+  border: 3px solid #e1e1e1;
+}
+
+.step span {
+  width: 3.75rem;
+  height: 3.75rem;
+  font-size: 2.07125rem;
+  font-weight: 600;
+  top: -40px;
+  left: 15px;
+  background-color: #cfcfcf;
+}
+.step span.active {
+  background: -webkit-gradient(linear, left top, right top, from(#c82090), to(#6a14d1));
+  background: linear-gradient(to right, #c82090, #6a14d1);
+}
+.step p {
+  color: #cfcfcf;
+  font-size: 1.24875rem;
+  font-weight: 500;
+}
+.step p.active {
+  background: -webkit-linear-gradient(#c82090, #6a14d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.step.finish span {
+  background: -webkit-gradient(linear, left top, right top, from(#c82090), to(#6a14d1));
+  background: linear-gradient(to right, #c82090, #6a14d1);
+}
+.step.finish p {
+  background: -webkit-linear-gradient(#c82090, #6a14d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form_btn {
+  bottom: 10%;
+  left: 20%;
+}
+
+.prev_btn {
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #000000;
+}
+.prev_btn .fas {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #000000;
+  background-color: #ffffff;
+}
+.prev_btn .fas:hover {
+  color: #ffffff;
+  background-color: #000000;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.prev_btn:hover {
+  color: #000000 !important;
+  background-color: #ffffff;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.next_btn {
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 600;
+  background: -webkit-gradient(linear, left top, right top, from(#c82090), to(#6a14d1));
+  background: linear-gradient(to right, #c82090, #6a14d1);
+}
+.next_btn .fas {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #000000;
+}
+.next_btn .fas:hover {
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.next_btn:hover {
+  color: #000000 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#6a14d1), to(#c82090));
+  background: linear-gradient(to right, #6a14d1, #c82090);
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition - start ============================ */
+a,
+button {
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end ============================== */
+.step_area_fixed {
+  position: fixed;
+}
+
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.animate_150ms {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animate_200ms {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1399.98px) {
+  .question_title h1 {
+    width: 80%;
+    font-size: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  label {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  .step span {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .step p {
+    font-size: 1.1rem;
+  }
+
+  .form_btn {
+    left: 11%;
+  }
+
+  .prev_btn {
+    padding: 0.6rem;
+    font-weight: 500;
+  }
+
+  .next_btn {
+    padding: 0.6rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .question_title h1 {
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 1.7rem;
+  }
+
+  label {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .form_btn {
+    left: 20%;
+  }
+
+  .next_btn {
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .steps_area {
+    position: static;
+  }
+
+  label {
+    padding: 1rem 2rem;
+  }
+
+  .steps_number {
+    margin-bottom: 10rem;
+  }
+
+  .form_btn {
+    left: 30%;
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .question_title h1 {
+    padding: 1.5rem;
+  }
+
+  label {
+    width: 80%;
+    padding: 1rem 2rem;
+  }
+
+  .progress {
+    width: 90%;
+  }
+
+  .step span {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    top: -40px;
+    left: 15px;
+  }
+  .step p {
+    font-size: 1rem;
+  }
+
+  .form_btn {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .question_title h1 {
+    width: 90%;
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  label {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .progress {
+    width: 90%;
+  }
+
+  .step span {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    top: -40px;
+    left: 15px;
+  }
+  .step p {
+    font-size: 1rem;
+  }
+
+  .form_btn {
+    bottom: 2%;
+    left: 15%;
+  }
+}

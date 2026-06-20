@@ -1,0 +1,177 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 115vh;
+    background-image: url('../images/background/bg_0.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 6rem;
+}
+.count_clock{
+    img{
+        width: 6rem;
+    }
+    span{
+        font-size: 2.1875rem;
+        top: 59%;
+        left: 28px;
+        transform: translateY(-50%);
+        z-index: 9999;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.step_progress{
+    top: 40%;
+    left: 230px;
+    transform: translateX(-50%);
+    .step{
+        width: 3.7rem;
+        height: 3.7rem;
+        line-height: 2.4rem;
+        font-size: 1.75rem;
+        background-color: $white;
+        border: 0.7rem solid #dbdbdb;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        &:after{
+            content: "";
+            width: 4px;
+            height: 25px;
+            top: 48px;
+            left: 17px;
+            position: absolute;
+            background-color: #dbdbdb;
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+        &.active{
+            background: -webkit-linear-gradient(#fe6300, #ffae15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-color: #fe6300;
+            &::after{
+                background-color: #fe6300;
+            }
+        }
+        &.finish{
+            background: -webkit-linear-gradient(#fe6300, #ffae15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-color: #fe6300;
+            &::after{
+                background-color: #fe6300;
+            }
+        }
+    }
+}
+.multisteps_form{
+    width: 50%;
+    height: 56.875rem;
+    background-color: $white;
+    border-radius: 0.3rem;
+    margin: -2rem auto;
+}
+.multisteps_form_panel{
+    display: none;
+}
+.question_number{
+    color: #e8e8e8;
+    font-size: 1.426875rem;
+    font-weight: 700;
+}
+.question_content{
+    width: 80%;
+    margin: 2rem auto;
+    &:before{
+        content: "?";
+        top: -40%;
+        right: 10%;
+        position: absolute;
+        color: #eef9fd;
+        font-size: 16rem;
+        font-weight: 700;
+        z-index: 1;
+    }
+    h1{
+        font-size: 3.125rem;
+        padding: 3rem 1rem;
+        font-weight: 800;
+        border: 0.8rem solid;
+        border-image: linear-gradient(45deg,#fe6300,#ffae15) 10;
+        z-index: 2;
+    }
+}
+.form_items{
+    label{
+        width: 80%;
+        font-size: 1.4375rem;
+        padding: .8rem 0rem;
+        padding-left: 4rem;
+        margin-top: 1rem;
+        font-weight: 600;
+        background-color: #0d1424;
+        cursor: pointer;
+        transition: $default_transition;
+        &:before{
+            content: '';
+            width: 2.5rem;
+            height: 2.5rem;
+            top: 50%;
+            left: 13px;
+            transform: translateY(-50%);
+            position: absolute;
+            background-color: #464b57;
+            border: 2px solid #dbdbdb;
+            border-radius: 100%;
+        }
+        span{
+            top: 50%;
+            left: 27px;
+            transform: translateY(-50%);
+            font-size: 0.96375rem;
+        }
+        input{
+            display: none;
+        }
+        &.active{
+            background:linear-gradient(to right, #fe6300,#ffae15);
+            transition: all .6s ease-in;
+            &:before{
+                background-color: #fa893d;
+            }
+        }
+    }
+}
+.progress{
+    width: 80%;
+    margin: 0 auto;
+}
+.progress-bar{
+    background:linear-gradient(to right, #fe6300,#ffae15);
+}
+.f_btn{
+    font-size: 1.375rem;
+    padding: .5rem 2.5rem;
+    background:linear-gradient(to right, #fe6300,#ffae15);
+    font-weight: 700;
+}
+.prev_btn{
+    left: 180px;
+    bottom: 100px;
+    &:hover{
+        color: $white;
+        background:linear-gradient(to right, #ffae15,#fe6300);
+    }
+}
+.next_btn{
+    right: 180px;
+    bottom: 100px;
+    &:hover{
+        color: $black!important;
+        background:linear-gradient(to right, #ffae15,#fe6300);
+    }
+}

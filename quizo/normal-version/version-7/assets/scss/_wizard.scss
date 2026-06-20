@@ -1,0 +1,194 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background/bg_0.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.count_box{
+    max-width: 25rem;
+    min-height: 5.625rem;
+    background: linear-gradient(to right, #544cf9, #814cf9);
+    font-family: 'Jost', sans-serif;
+}
+.count_clock{
+    img{
+        width: 2.8125rem;
+    }
+}
+.count_title{
+    h4{
+        font-size: 1.146875rem;
+        font-weight: 800;
+        margin-bottom: -0.4rem;
+    }
+    span{
+        font-size: 1.146875rem;
+        font-weight: 800;
+    }
+}
+.count_number{
+    width: 14rem;
+    height: 4.5rem;
+    background-color: $white;
+    .count_hours,
+    .count_min,
+    .count_sec{
+        h3{
+            color: #000a38;
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: -0.4rem;
+        }
+        span{
+            color: #000a38;
+            font-size: 1rem;
+            font-weight: 800;
+            margin-bottom: 0rem;
+            padding-left: 0.2rem;
+        }
+        &:after{
+            content: "";
+            width: 0.1875rem;
+            height: 2.5625rem;
+            top: 50%;
+            right: 80px;
+            transform: translateY(-50%);
+            position: absolute;
+            background-color: #e1e1e1;
+        }
+        &:before{
+            content: "";
+            width: 0.1875rem;
+            height: 2.5625rem;
+            top: 50%;
+            left: 80px;
+            transform: translateY(-50%);
+            position: absolute;
+            background-color: #e1e1e1;
+        }
+    }
+}
+.multisteps_form{
+    max-width: 47.1875rem;
+    min-height: 54rem;
+    box-shadow: 0 -3em 3em rgba(73, 73, 73, 0.1),
+    0.3em 0.3em 1em rgba(73, 73, 73, 0.1);
+    border-radius: 0.625rem;
+}
+.multisteps_form_panel{
+    display: none;
+}
+.question_number{
+    span{
+        color: #e5e5e5;
+        font-size: 2.5rem;
+    }
+}
+.question_title{
+    h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+        background: -webkit-linear-gradient(#544cf9, #814cf9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.form_items_content{
+    label{
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: 2px solid #e1e1e1;
+        margin: 1rem;
+        cursor: pointer;
+    }
+    input{
+        display: none;;
+    }
+    &:after {
+        content: "";
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 20%;
+        right: 35px;
+        transform: translateY(-50%);
+        position: absolute;
+        border-radius: 100%;
+        border: 2px solid #e1e1e1;
+        cursor: pointer;
+    }
+    &:before {
+        content: '\f111';
+        top: 19.5%;
+        right: 39px;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        font-weight: 900;
+        background: -webkit-linear-gradient(#544cf9, #814cf9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 1;
+        position: absolute;
+        font-family: 'Font Awesome 5 Free';
+        display: none;
+    }
+    &.active {
+        &:after{
+            border: 2px solid #544cf9;
+        }
+        &:before {
+            display: block;
+        }
+    }
+}
+.form_items_icon{
+    img{
+        width: 3.75rem;
+        height: auto;
+    }
+}
+.form_items_text{
+    color: #576072;
+    font-size: 1.210625rem;
+}
+// Progress bar
+.step_progress{
+    span{
+        color: #2f3146;
+        font-size: 1rem;
+        font-family: 'Jost', sans-serif;
+    }
+}
+.progress{
+    border: 4px solid #ededed;
+    background-color: white;
+}
+.progress-bar{
+    background: linear-gradient(to right, #544cf9, #814cf9);
+    padding: 1rem;
+}
+.f_btn{
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #554cf9, #804cf9);
+    &:hover{
+        color: $black!important;
+        background: linear-gradient(to right,#804cf9, #554cf9);
+        transition: $default_transition;
+    }
+}
+.next_btn{
+    padding: 0.9375rem 3rem;
+}
+.prev_btn{
+    padding: 0.9375rem 1.5625rem;
+}
+.right_img{
+    img{
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,161 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background/bg_0.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.clock_area{
+    img{
+        width: 8rem;
+        height: 9rem;
+    }
+    span{
+        top: 55%;
+        right: 46px;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.multisteps_form_panel{
+    display: none;
+}
+.content_box{
+    padding-left: 13rem;
+    overflow: hidden;
+}
+.question_number{
+    span{
+        color: #b4b4b4;
+        font-size: 1.25rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+}
+.question_title{
+    h1{
+        font-size: 3.125rem;
+        font-weight: 800;
+    }
+}
+.form_items{
+    padding-bottom: 10rem;
+    label{
+        width: 90%;
+        font-size: 1.5rem;
+        padding: 1rem 0rem;
+        padding-left: 4rem;
+        margin-top: 0.625rem;
+        font-weight: 600;
+        border: 3px solid #dbdbdb;
+        cursor: pointer;
+        &:before{
+            content: '';
+            top: 50%;
+            left: 13px;
+            transform: translateY(-50%);
+            width: 2.3125rem;
+            height: 2.3125rem;
+            position: absolute;
+            background-color: $white;
+            border: 2px solid #dbdbdb;
+            border-radius: 100%;
+        }
+        span{
+            top: 50%;
+            left: 26px;
+            transform: translateY(-50%);
+            font-size: 1.125rem;
+        }
+        input{
+            display: none;
+        }
+        &.active{
+            background-color: #f9bc31!important;
+            border: 3px solid transparent;
+            &:before{
+                background-color: $white;
+            }
+        }
+    }
+}
+.step_progress{
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    .step{
+        width: 5rem;
+        height: 5rem;
+        color: $black;
+        line-height: 3.5rem;
+        font-size: 1.75rem;
+        border: 0.8rem solid #dbdbdb;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        &:after{
+            content: "";
+            top: 50%;
+            left: 60px;
+            transform: translateY(-50%);
+            width: 8rem;
+            height: 0.4rem;
+            position: absolute;
+            background-color: #dbdbdb;
+        }
+        &.active{
+            color: #f9bc31;
+            border-color: #f9bc31;
+            &::after{
+                background-color: #f9bc31;
+            }
+        }
+        &.finish{
+            color: #f9bc31;
+            border-color: #f9bc31;
+            &::after{
+                background-color: #f9bc31;
+            }
+        }
+    }
+}
+.left-side-img{
+    display: inline-block;
+    img{
+        width: 25rem;
+        height: 30rem;
+        bottom: 200px;
+        left: 15%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+}
+.f_btn{
+    font-size: 1.125rem;
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    font-weight: 800;
+}
+.prev_btn{
+    bottom: 5%;
+    left: 33%;
+    background-color: #dbdbdb;
+    &:hover{
+        color: $white;
+        background-color: #f9bc31;
+    }
+}
+.next_btn{
+    bottom: 5%;
+    right: 20%;
+    background-color: #f9bc31;
+    &:hover{
+        color: $white;
+        background-color: #dbdbdb;
+    }
+}
+

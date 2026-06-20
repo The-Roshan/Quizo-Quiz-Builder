@@ -1,0 +1,90 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1200px)
+*	02 - media screen and (max-width: 992px)
+*	03 - media screen and (max-width: 768px)
+*	04 - media screen and (max-width: 576px)
+*	05 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .question_title{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .form_items{
+        label{
+            &:before{
+                top: 17%;
+            }
+            &:after{
+                top: 17%;
+            }
+        }
+    }
+}
+// 02 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .question_title{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .form_items{
+        label{
+            &:before{
+                top: 21%;
+            }
+            &:after{
+                top: 21%;
+            }
+        }
+    }
+    .f_btn{
+        font-size: 0.8rem;
+        padding: 0.8rem 1.3rem;
+    }
+}
+// 03 - media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .logo_area{
+        text-align: center;
+        margin-left: 0rem!important;
+    }
+    .question_title{
+        h1{
+            font-size: 1.5rem;
+            padding-top: 2rem;
+        }
+    }
+    .prev_btn{
+        left: 22%;
+    }
+    .next_btn{
+        right: 22%;
+    }
+}
+// 04 - media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .form_items{
+        label{
+            &:before{
+                top: 14%;
+            }
+            &:after{
+                top: 14%;
+            }
+        }
+    }
+    .f_btn{
+        padding: 0.8rem 1rem;
+    }
+    .prev_btn{
+        left: 5%;
+    }
+    .next_btn{
+        right: 5%;
+    }
+}

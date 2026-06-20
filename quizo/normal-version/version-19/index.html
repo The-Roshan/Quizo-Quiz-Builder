@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quizo HTML Template - V.19</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+   <div class="wrapper position-relative">
+      <div class="container-fluid">
+         <div class="logo_area ps-5 pt-5">
+            <a href="index.html">
+               <img src="./assets/images/logo/logo.png" alt="image_not_found">
+            </a>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-8 m-auto">
+               <form class="multisteps_form" id="wizard" method="POST" action="../thankyou/index-1.html">
+                  <!--------------- Step-1 -------------->
+                  <div class="multisteps_form_panel step">
+                     <div class="form_content position-relative mt-5">
+                        <div class="audio_content pb-5 d-flex align-items-center">
+                           <a><i class="fas fa-volume-up play-button rounded-pill bg-white shadow" onclick="toggleAudio()">
+                              <audio preload="metadata" controls controlslist="nodownload">
+                                 <source src="./assets/audio/audio.mp3" type="audio/mpeg">
+                              </audio>
+                           </i></a>
+                           <div class="audio_title">
+                              <h1 class="ps-3">Identify the Lyricist of the song</h1>
+                           </div>
+                        </div>
+                        <div class="content_box bg-white mt-1">
+                           <div class="question_title ps-5 pt-5">
+                              <h6>1. Annapurna Circuit</h6>
+                           </div>
+                           <div class="form_items ps-5 pt-4">
+                              <label for="opt_1" class="step_1 position-relative animate__animated animate__fadeInRight animate_25ms active">
+                                 Annapurna Circuit
+                                 <input id="opt_1" type="radio" name="stp_1_select_option" value="Annapurna Circuit" checked>
+                              </label>
+                              <label for="opt_2" class="step_1 position-relative animate__animated animate__fadeInRight animate_50ms mt-3">
+                                 Inca Trail
+                                 <input id="opt_2" type="radio" name="stp_1_select_option" value="Inca Trail">
+                              </label>
+                              <label for="opt_3" class="step_1 position-relative animate__animated animate__fadeInRight animate_100ms mt-3">
+                                 Kala Patthar trek near
+                                 <input id="opt_3" type="radio" name="stp_1_select_option" value="Kala Patthar trek near">
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--------------- Step-2 -------------->
+                  <div class="multisteps_form_panel step">
+                     <div class="form_content position-relative mt-5">
+                        <div class="audio_content pb-5 d-flex align-items-center">
+                           <a><i class="fas fa-volume-up play-button rounded-pill bg-white shadow" onclick="toggleAudio()">
+                              <audio preload="metadata" controls controlslist="nodownload">
+                                 <source src="./assets/audio/audio.mp3" type="audio/mpeg">
+                              </audio>
+                           </i></a>
+                           <div class="audio_title">
+                              <h1 class="ps-3">Identify the Lyricist of the song</h1>
+                           </div>
+                        </div>
+                        <div class="content_box bg-white mt-1">
+                           <div class="question_title ps-5 pt-5">
+                              <h6>2. Vietnam joined the U.N.O in the year</h6>
+                           </div>
+                           <div class="form_items ps-5 pt-4">
+                              <label for="opt_4" class="step_2 position-relative animate__animated animate__fadeInRight animate_25ms">
+                                 1977
+                                 <input id="opt_4" type="radio" name="stp_2_select_option" value="1977" checked>
+                              </label>
+                              <label for="opt_5" class="step_2 position-relative animate__animated animate__fadeInRight animate_50ms mt-3">
+                                 1970
+                                 <input id="opt_5" type="radio" name="stp_2_select_option" value="1970">
+                              </label>
+                              <label for="opt_6" class="step_2 position-relative animate__animated animate__fadeInRight animate_100ms mt-3">
+                                 1976
+                                 <input id="opt_6" type="radio" name="stp_2_select_option" value="1976">
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--------------- Step-3 -------------->
+                  <div class="multisteps_form_panel step">
+                     <div class="form_content position-relative mt-5">
+                        <div class="audio_content pb-5 d-flex align-items-center">
+                           <a><i class="fas fa-volume-up play-button rounded-pill bg-white shadow" onclick="toggleAudio()">
+                              <audio preload="metadata" controls controlslist="nodownload">
+                                 <source src="./assets/audio/audio.mp3" type="audio/mpeg">
+                              </audio>
+                           </i></a>
+                           <div class="audio_title">
+                              <h1 class="ps-3">Identify the Lyricist of the song</h1>
+                           </div>
+                        </div>
+                        <div class="content_box bg-white mt-1">
+                           <div class="question_title ps-5 pt-5">
+                              <h6>3. The International Court of Justice is located at</h6>
+                           </div>
+                           <div class="form_items ps-5 pt-4">
+                              <label for="opt_7" class="step_3 position-relative animate__animated animate__fadeInRight animate_25ms">
+                                 Geneva
+                                 <input id="opt_7" type="radio" name="stp_3_select_option" value="Geneva" checked>
+                              </label>
+                              <label for="opt_8" class="step_3 position-relative animate__animated animate__fadeInRight animate_50ms mt-3">
+                                 Hague
+                                 <input id="opt_8" type="radio" name="stp_3_select_option" value="Hague">
+                              </label>
+                              <label for="opt_9" class="step_3 position-relative animate__animated animate__fadeInRight animate_100ms mt-3">
+                                 Amsterdam
+                                 <input id="opt_9" type="radio" name="stp_3_select_option" value="Amsterdam">
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--------------- Step-4 -------------->
+                  <div class="multisteps_form_panel step">
+                     <div class="form_content position-relative mt-5">
+                        <div class="audio_content pb-5 d-flex align-items-center">
+                           <a><i class="fas fa-volume-up play-button rounded-pill bg-white shadow" onclick="toggleAudio()">
+                              <audio preload="metadata" controls controlslist="nodownload">
+                                 <source src="./assets/audio/audio.mp3" type="audio/mpeg">
+                              </audio>
+                           </i></a>
+                           <div class="audio_title">
+                              <h1 class="ps-3">Identify the Lyricist of the song</h1>
+                           </div>
+                        </div>
+                        <div class="content_box bg-white mt-1">
+                           <div class="question_title ps-5 pt-5">
+                              <h6>4. G-7 includes</h6>
+                           </div>
+                           <div class="form_items ps-5 pt-4">
+                              <label for="opt_10" class="step_4 position-relative animate__animated animate__fadeInRight animate_25ms">
+                                 South Africa
+                                 <input id="opt_10" type="radio" name="stp_4_select_option" value="South Africa" checked>
+                              </label>
+                              <label for="opt_11" class="step_4 position-relative animate__animated animate__fadeInRight animate_50ms mt-3">
+                                 India
+                                 <input id="opt_11" type="radio" name="stp_4_select_option" value="India">
+                              </label>
+                              <label for="opt_12" class="step_4 position-relative animate__animated animate__fadeInRight animate_100ms mt-3">
+                                 Italy
+                                 <input id="opt_12" type="radio" name="stp_4_select_option" value="Italy">
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Form-Button -->
+                  <button type="button" class="f_btn prev_btn border-0 text-white position-absolute" id="prevBtn" onclick="nextPrev(-1)">Prev Question</button>
+                  <button type="button" class="f_btn next_btn border-0 text-white position-absolute" id="nextBtn"
+                  onclick="nextPrev(1)">
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- jQuery-js include -->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap-js include -->
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- jQuery-validate-js include -->
+<script src="./assets/js/jquery.validate.min.js"></script>
+<!-- Custom-js include -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

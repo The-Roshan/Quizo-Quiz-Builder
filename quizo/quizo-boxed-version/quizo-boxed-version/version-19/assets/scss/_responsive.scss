@@ -1,0 +1,136 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .audio_title{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+}
+// 02 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .audio_title{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .question_title{
+        h6{
+            font-size: 1.4rem;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 1rem;
+        }
+    }
+}
+// 03 - media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .logo_area{
+        text-align: center;
+        padding-left: 0!important;
+    }
+    .audio_content{
+        .fas{
+            font-size: 1rem;
+            padding: 1.5rem;
+        }
+    }
+    .audio_title{
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    .content_box{
+        width: 100%;
+        height: 18rem;
+    }
+    .question_title{
+        h6{
+            font-size: 1rem;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 0.8rem;
+        }
+    }
+    .f_btn{
+        font-size: 0.7rem;
+        padding: 0.7rem 1rem;
+    }
+    .prev_btn{
+        bottom: 8%;
+        left: 28%;
+    }
+    .next_btn{
+        bottom: 8%;
+        right: 28%;
+    }
+}
+// 03 - media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .logo_area{
+        img{
+            width: 8rem;
+        }
+    }
+    .audio_content{
+        .fas{
+            padding: 1rem;
+        }
+    }
+    .audio_title{
+        h1{
+            font-size: 1.2rem;
+        }
+    }
+    .question_title{
+        padding-left: 2rem!important;
+    }
+    .form_items{
+        padding-left: 2rem!important;
+    }
+    .f_btn{
+        font-size: 0.5rem;
+        padding: 0.5rem 0.8rem;
+    }
+    .prev_btn{
+        left: 22%;
+    }
+    .next_btn{
+        right: 22%;
+    }
+}
+// 03 - media screen and (max-width: 320px)
+@media screen and(max-width: 319.98px){
+    .logo_area{
+        img{
+            width: 5rem;
+        }
+    }
+    .audio_title{
+        h1{
+            font-size: 0.8rem;
+        }
+    }
+    .question_title{
+        h6{
+            font-size: 0.8rem;
+        }
+    }
+
+}
+

@@ -1,0 +1,236 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 120vh;
+    background-image: url('../images/background/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+.multisteps_form{
+    margin-bottom: 6rem;
+}
+.multisteps_form_panel {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    overflow: hidden;
+    height: 0;
+}
+.multisteps_form_panel.active {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: auto;
+}
+
+.multisteps_form_panel[data-animation=scaleOut] {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.multisteps_form_panel[data-animation=scaleOut].active {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.multisteps_form_panel[data-animation=slideHorz] {
+    left: -50px;
+}
+.multisteps_form_panel[data-animation=slideHorz].active {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+    -o-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+    transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    left: 0;
+}
+.multisteps_form_panel[data-animation=slideVert] {
+    top: 30px;
+}
+.multisteps_form_panel[data-animation=slideVert].active {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    top: 0;
+}
+.multisteps_form_panel[data-animation=fadeIn].active {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.multisteps_form_panel[data-animation=scaleIn] {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.multisteps_form_panel[data-animation=scaleIn].active {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.form_content{
+    display: none;
+}
+.multisteps_form_panel.active .form_content{
+    display: block;
+}
+.count_clock{
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+.count_clock{
+    span{
+        width: 120px;
+        font-size: 2.5rem;
+        background: -webkit-linear-gradient(#4285ec, #0cb9fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.question_title{
+    h1{
+        color: #151515;
+        font-size: 3.125rem;
+    }
+}
+.form_items{
+    margin-bottom: 10rem;
+    label{
+        width: 100%;
+        cursor: pointer;
+        &:before{
+            content: '\f111';
+            top: 15%;
+            left: 29px;
+            transform: translateY(-50%);
+            position: absolute;
+            color: #107eeb;
+            font-size: 1.5rem;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            display: none;
+        }
+        &:after{
+            content: '';
+            top: 15%;
+            left: 25px;
+            transform: translateY(-50%);
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border: 3px solid #e0e0e0;
+            border-radius: 100px;
+            font-weight: 900;
+        }
+        &.active{
+            &:before{
+                display: block;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    }
+    input{
+        opacity: 0;
+        // display: none; // if use this validation not work
+    }
+    .error + .error {
+        width: 400px;
+        color: red;
+        font-size: 1.2rem;
+        top: -45px;
+        left: 80%;
+        transform: translateX(-50%);
+        position: absolute;
+        background-color: transparent;
+        text-transform: capitalize;
+        display: block;
+        font-weight: 600;
+        z-index: 99999;
+        &::after{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+    }
+}
+.f_btn{
+    font-size: 1rem;
+    padding: 1.3rem 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.prev_btn{
+    bottom: 30px;
+    left: 27%;
+    background-color: #214466;
+    &:hover{
+        background-color: #107eeb;
+    }
+}
+.next_btn{
+    bottom: 30px;
+    right: 27%;
+    background-color: #107eeb;
+    &:hover{
+        background-color: #214466;
+    }
+}

@@ -1,0 +1,522 @@
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/background/bg_0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.form_content {
+  width: 80%;
+  min-height: 38.75rem;
+  background-image: url("../images/background/bg_1.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0.625rem 0.625rem;
+  margin: 0 auto;
+}
+
+.count_clock img {
+  max-width: 2.7rem;
+  min-height: 2.7rem;
+}
+
+.count_number span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#4186ec, #0eb7fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.question_title h1 {
+  font-size: 4.0625rem;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 4rem 5rem 0rem 5rem;
+  overflow: hidden;
+}
+
+.form_items {
+  bottom: -35%;
+  left: 82px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.form_items label {
+  width: 236px;
+  height: 200px;
+  color: #0d1424;
+  font-size: 1.75rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding-top: 5rem;
+  cursor: pointer;
+}
+.form_items label:not(:last-child) {
+  margin-right: 1.3rem;
+}
+.form_items label span {
+  top: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 2.1875rem;
+  background-color: #000000;
+  font-weight: 500;
+}
+.form_items label.active {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4285ec), to(#0cb9fb)) !important;
+  background: linear-gradient(to top, #4285ec, #0cb9fb) !important;
+}
+.form_items label.active span {
+  background: -webkit-gradient(linear, left bottom, left top, from(#4285ec), to(#0cb9fb));
+  background: linear-gradient(to top, #4285ec, #0cb9fb);
+}
+.form_items label.finish {
+  background-color: red;
+}
+.form_items label input {
+  display: none;
+}
+
+.step_progress_bar {
+  padding-top: 10rem;
+  margin: 0 auto;
+  z-index: 99999;
+}
+
+.step:not(:last-child) {
+  margin-right: 10rem;
+}
+.step span {
+  width: 3.75rem;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  font-size: 2.07125rem;
+  font-weight: 600;
+  top: -40px;
+  left: 11px;
+  background-color: #e5e5e5;
+}
+.step span.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4285ec), to(#0bbafb));
+  background: linear-gradient(#4285ec, #0bbafb);
+}
+.step p {
+  color: #1e1d1d;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.step p.active {
+  background: -webkit-linear-gradient(#4285ec, #0bbafb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.step.finish span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4285ec), to(#0bbafb));
+  background: linear-gradient(#4285ec, #0bbafb);
+}
+.step.finish p {
+  background: -webkit-linear-gradient(#4285ec, #0bbafb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress_bar {
+  width: 65%;
+  height: 34px;
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+  margin: auto;
+  border-radius: 1.5rem;
+  bottom: 68px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.progress {
+  width: 99%;
+  height: 20px;
+  font-size: 1rem;
+  background-color: #e5e5e5;
+  margin-top: 0.2rem;
+  z-index: -1;
+  margin-left: 0.3rem;
+}
+.progress .progress-bar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4285ec), to(#0cb9fb));
+  background: linear-gradient(#4285ec, #0cb9fb);
+  margin: 0.1rem;
+  z-index: 9999;
+}
+
+.next_btn {
+  bottom: 13%;
+  right: 60px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#4285ec), to(#0bbafb));
+  background: linear-gradient(to right, #4285ec, #0bbafb);
+}
+.next_btn:hover {
+  color: #000000 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#0bbafb), to(#4285ec));
+  background: linear-gradient(to right, #0bbafb, #4285ec);
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.prev_btn {
+  bottom: 13%;
+  left: 60px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#4285ec), to(#0bbafb));
+  background: linear-gradient(to right, #4285ec, #0bbafb);
+}
+.prev_btn:hover {
+  color: #000000 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#0bbafb), to(#4285ec));
+  background: linear-gradient(to right, #0bbafb, #4285ec);
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Oswald", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition - start
+================================================== */
+a,
+button {
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end
+================================================== */
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.animate_150ms {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animate_200ms {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1500px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1499.98px) {
+  .form_items {
+    left: 82px;
+  }
+  .form_items label {
+    width: 200px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 1399.98px) {
+  .form_items {
+    bottom: -30%;
+    left: 48px;
+  }
+  .form_items label {
+    width: 180px;
+    height: 160px;
+  }
+
+  .step:not(:last-child) {
+    margin-right: 7rem;
+  }
+
+  .next_btn, .prev_btn {
+    bottom: 4%;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .form_items {
+    left: 45px;
+  }
+  .form_items label {
+    width: 150px;
+    height: 140px;
+    font-size: 1rem;
+  }
+  .form_items label:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .step:not(:last-child) {
+    margin-right: 5rem;
+  }
+  .step span {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    top: -44px;
+  }
+  .step p {
+    font-size: 1rem;
+  }
+
+  .progress {
+    width: 98%;
+    height: 20px;
+    top: 140px;
+  }
+
+  .next_btn, .prev_btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .question_title h1 {
+    font-size: 2.5rem;
+  }
+
+  .form_items {
+    bottom: 0%;
+    left: 10px;
+  }
+  .form_items label {
+    width: 120px;
+    height: 110px;
+    padding-top: 2rem;
+  }
+  .form_items label span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .step_progress_bar {
+    padding-top: 3rem;
+  }
+
+  .step:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+  .step span {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .step p {
+    font-size: 1rem;
+  }
+
+  .next_btn, .prev_btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .form_content {
+    width: 100%;
+  }
+
+  .question_title h1 {
+    font-size: 2rem;
+    padding: 5rem 2rem 0rem 2rem;
+  }
+
+  .form_items {
+    bottom: -15%;
+    left: 0px;
+  }
+  .form_items label {
+    width: 170px;
+    height: 130px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+
+  .form_btn {
+    margin-top: 5rem;
+  }
+
+  .next_btn, .prev_btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+  }
+}
+@media screen and (max-width: 399.98px) {
+  .form_items {
+    bottom: -15%;
+    left: 0px;
+  }
+  .form_items label {
+    width: 130px;
+    height: 110px;
+  }
+  .form_items label span {
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+  }
+
+  .step:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .step span {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+  .step p {
+    font-size: 0.8rem;
+  }
+
+  .next_btn {
+    right: 50px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .prev_btn {
+    left: 50px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media screen and (max-width: 399.98px) {
+  .form_items label {
+    width: 130px;
+    height: 110px;
+  }
+  .form_items label span {
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+  }
+
+  .step:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .step span {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+  }
+  .step p {
+    font-size: 0.8rem;
+  }
+
+  .next_btn {
+    right: 50px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .prev_btn {
+    left: 50px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

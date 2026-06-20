@@ -1,0 +1,268 @@
+// ================ Multi-step css =================
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+
+  .container-fluid {
+    max-width: 1600px;
+    margin: auto;
+    position: relative;
+  }
+}
+.step_bar_content{
+  h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+.step{
+  height: 2.0625rem;
+  width: 2.0625rem;
+  font-size: 1.075rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 600;
+  background-color: #3c515c;
+  &:not(:last-child){
+    margin-right: 1.875rem;
+  }
+  &:after{
+    content: '';
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 0.1rem;
+    position: absolute;
+    background-color: #3c515c;
+  }
+  &:last-child{
+    &:after{
+      display: none;
+    }
+  }
+  &.active {
+    background-color: $defaultColor;
+    &::after{
+      background-color: $defaultColor;
+    }
+    opacity: 1;
+  }
+  &.finish{
+    background-color: $defaultColor;
+    &::after{
+      background-color: $defaultColor;
+    }
+  }
+}
+// ================
+
+.multisteps_form_panel {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+  height: 0;
+}
+.multisteps_form_panel.active {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+}
+
+.multisteps_form_panel[data-animation=scaleOut] {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.multisteps_form_panel[data-animation=scaleOut].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.multisteps_form_panel[data-animation=slideHorz] {
+  left: -50px;
+}
+.multisteps_form_panel[data-animation=slideHorz].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+       -o-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+          transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  left: 0;
+}
+.multisteps_form_panel[data-animation=slideVert] {
+  top: 30px;
+}
+.multisteps_form_panel[data-animation=slideVert].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  top: 0;
+}
+.multisteps_form_panel[data-animation=fadeIn].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.multisteps_form_panel[data-animation=scaleIn] {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.multisteps_form_panel[data-animation=scaleIn].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+// step iner
+.form_content{
+  padding-top: 10rem;
+  display: none;
+}
+.multisteps_form_panel.active .form_content{ 
+  display: block;
+}
+.form_title{
+  h1{
+    font-size: 4rem;
+    font-weight: 600;
+  }
+}
+.form_img{
+  img{
+    width: 75%;
+  }
+}
+.form_items{
+  label{
+    padding: 0rem 3rem;
+    cursor: pointer;
+  }
+  .label-pointer {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem 1.5rem;
+    background-color: #d2e9d9;
+    border: 4px solid transparent;
+    cursor: pointer;
+  }
+  .label-content {
+    min-width: 160px;
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: #d2e9d9;
+    border: 4px solid transparent;
+    cursor: pointer;
+  }
+  .active{
+    .label-pointer, .label-content {
+      background-color: $defaultColor;
+      box-shadow: 0 0 3px #b8b9b8;
+      border: 4px solid #c8edd2;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  input{
+    opacity: 0;
+    position: absolute;
+    // display: none; // if use this validation not work
+  }
+  .error {
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+  }
+}
+
+.form_btn{
+  .f_btn{
+    color: $white;
+    font-size: 0.9375rem;
+    font-weight: 800;
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+  }
+  .disable{
+    color: $white;
+    background-color: #172126;
+    margin-right: 0.625rem;
+    &:hover{
+      color: $black;
+      background-color: $white;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .active{
+    color: $white;
+    background-color: #172126;
+    &:hover{
+      color: $black;
+      background-color: $white;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}

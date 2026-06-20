@@ -1,0 +1,132 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.video_player{
+    padding-top: 8rem;
+    overflow: hidden;
+}
+.video-btn{
+    span{
+        display: inline-block;
+        border: 8px solid #ededed61;
+    }
+    .fas{
+        width: 6rem;
+        height: 6rem;
+        line-height: 5rem;
+        font-size: 1.875rem;
+        background: linear-gradient(to right, #f95934, #fba220);
+        border: 8px solid #d0d6d9;
+    }
+}
+.modal-dialog {
+    width: 100%;
+    margin: 3rem auto;
+}
+.btn-close {
+    top: 0;
+    right: -30px;
+}
+.multisteps_form_panel{
+    display: none;
+}
+.form_content{
+    padding-top: 5rem;
+}
+.question_number{
+    span{
+        font-size: 1.3125rem;
+    }
+}
+.question_title{
+    h1{
+        font-size: 3.4375rem;
+        letter-spacing: 2px;
+    }
+}
+.form_items{
+    padding: 7rem 0;
+    label{
+        width: 100%;
+        height: auto;
+        color: #212121;
+        font-size: 1.3125rem;
+        padding: 0.5rem 2rem;
+        padding-left: 7rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+        span{
+            top: 50%;
+            left: -5px;
+            transform: translateY(-50%);
+            color: #31395c;
+            border-radius: 10px;
+            padding: 1rem 2.5rem;
+            background-color: #e3dbc8;
+        }
+        &.active{
+            color: $white;
+            background: linear-gradient(to right, #f95634, #fba220);
+            span{
+                background-color: #212121;
+                .fas{
+                    color: $white;
+                }
+            }
+        }
+        input{
+            display: none;
+        }
+    }
+}
+.f_btn{
+    width: 8rem;
+    height: 8rem;
+    background-color: #31395c;
+    border-radius: 100%;
+    &:hover{
+        background: linear-gradient(to right, #f95634, #fba220);
+        transition: $default_transition;
+    }
+}
+.prev_btn{
+    top: 50%;
+    left: -2%;
+    transform: translateY(-50%);
+}
+.next_btn{
+    top: 50%;
+    right: -2%;
+    transform: translateY(-50%);
+}
+.progress{
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #31395c;
+    .far{
+        top: 15px;
+        right: 16px;
+        color: #7d86ac;
+        font-size: 1.5625rem;
+        z-index: 1;
+    }
+}
+.progress-bar{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: linear-gradient(to right, #f9413a, #fbb81a);
+    z-index: 3;
+}

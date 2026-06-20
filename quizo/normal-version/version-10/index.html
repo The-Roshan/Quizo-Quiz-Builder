@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quizo HTML Template - V.10</title>
+<!-- FontAwesome-cdn include -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- Google fonts include -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Bootstrap-css include -->
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<!-- Animate-css include -->
+<link rel="stylesheet" href="./assets/css/animate.min.css">
+<!-- Main-StyleSheet include -->
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+<div class="wrapper overflow-hidden position-relative">
+   <div class="container-fluid p-0">
+      <div class="row">
+         <div class="col-lg-4">
+            <div class="steps_area step_area_fixed">
+               <div class="form_logo position-absolute ps-5 pt-5">
+                  <img class="d-none d-lg-block" src="assets/images/logo/logo.png" alt="image_not_found">
+               </div>
+               <div class="image_holder">
+                  <img class="overflow-hidden d-none d-lg-block" src="assets/images/background/bg_0.png" alt="image_not_found">
+               </div>
+               <div class="form_btn position-absolute">
+                     <button type="button" class="prev_btn border-0 text-uppercase overflow-hidden rounded-pill text-white" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left rounded-pill"></i></span> Last
+                     Question</button>
+                     <button type="button" class="next_btn border-0 text-uppercase overflow-hidden rounded-pill text-white" id="nextBtn"
+                     onclick="nextPrev(1), move()">Next Question</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-8 pt-5 form_wrapper overflow-hidden">
+            <form class="multisteps_form" id="wizard" method="POST" action="../thankyou/index-1.html">
+               <!-------------------- Step-1 --------------------->
+               <div class="multisteps_form_panel">
+                  <div class="step_content text-center pt-3">
+                     <div class="count_clock">
+                        <img src="assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_number countdown_timer pt-1" data-countdown="2022/10/24"></div>
+                  </div>
+                  <div class="form_content">
+                     <div class="question_title py-5 text-white">
+                        <h1 class="text-center text-uppercase overflow-hidden rounded-pill">Which is the Smallest Country in the World ?</h1>
+                     </div>
+                        <div class="row text-center form_items">
+                           <div class="col-md-6 py-3">
+                              <label id="opt_1" class="step_1 bg-white overflow-hidden rounded-pill text-center">
+                                 Egypt
+                                 <input for="opt_1" type="radio" name="stp_1_select_option" value="Egypt">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_2" class="step_1 bg-white overflow-hidden rounded-pill text-center">
+                                 Vatican City
+                                 <input for="opt_2" type="radio" name="stp_1_select_option" value="Vatican City" checked>
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_3" class="step_1 bg-white overflow-hidden rounded-pill text-center active">
+                                 Singapore
+                                 <input for="opt_3" type="radio" name="stp_1_select_option" value="Singapore">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_4" class="step_1 bg-white overflow-hidden rounded-pill text-center">
+                                 France
+                                 <input for="opt_4" type="radio" name="stp_1_select_option" value="France">
+                              </label>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+                  <!-- ------------------ Step-2 ------------------- -->
+                  <div class="multisteps_form_panel">
+                  <div class="step_content text-center pt-3">
+                     <div class="count_clock ">
+                        <img src="assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_number countdown_timer pt-1" data-countdown="2022/10/24"></div>
+                  </div>
+                  <div class="form_content">
+                     <div class="question_title py-5 text-white">
+                        <h1 class="text-center text-uppercase overflow-hidden rounded-pill">The layer of the earth, immediately below the crust, is called</h1>
+                     </div>
+                        <div class="row text-center form_items">
+                           <div class="col-md-6 py-3">
+                              <label id="opt_5" class="step_2 bg-white overflow-hidden rounded-pill text-center">
+                                 outer core
+                                 <input for="opt_5" type="radio" name="stp_2_select_option" value="outer core">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_6" class="step_2 bg-white overflow-hidden rounded-pill text-center">
+                                 inner core
+                                 <input for="opt_6" type="radio" name="stp_2_select_option" value="inner core" checked>
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_7" class="step_2 bg-white overflow-hidden rounded-pill text-center">
+                                 outer mantle
+                                 <input for="opt_7" type="radio" name="stp_2_select_option" value="outer mantle">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_8" class="step_2 bg-white overflow-hidden rounded-pill text-center">
+                                 inner mantle
+                                 <input for="opt_8" type="radio" name="stp_2_select_option" value="inner mantle">
+                              </label>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+                  <!-- ------------------ Step-3 ------------------- -->
+                  <div class="multisteps_form_panel">
+                  <div class="step_content text-center pt-3">
+                     <div class="count_clock">
+                        <img src="assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_number countdown_timer pt-1" data-countdown="2022/10/24"></div>
+                  </div>
+                  <div class="form_content">
+                     <div class="question_title py-5 text-white">
+                        <h1 class="text-center text-uppercase overflow-hidden rounded-pill">THE LIMIT BEYOND WHICH THE STARS SUFFER INTERNAL COLLAPSE IS CALLED THE</h1>
+                     </div>
+                        <div class="row text-center form_items">
+                           <div class="col-md-6 py-3">
+                              <label id="opt_9" class="step_3 bg-white overflow-hidden rounded-pill text-center">
+                                 Raman Effect
+                                 <input for="opt_9" type="radio" name="stp_3_select_option" value="Raman Effect">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_10" class="step_3 bg-white overflow-hidden rounded-pill text-center">
+                                 Aurora Borealis
+                                 <input for="opt_10" type="radio" name="stp_3_select_option" value="Aurora Borealis" checked>
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_11" class="step_3 bg-white overflow-hidden rounded-pill text-center">
+                                 Chandrasekhar limit
+                                 <input for="opt_11" type="radio" name="stp_3_select_option" value="Chandrasekhar limit">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_12" class="step_3 bg-white overflow-hidden rounded-pill text-center">
+                                 Quasan Zone
+                                 <input for="opt_12" type="radio" name="stp_3_select_option" value="Quasan Zone">
+                              </label>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+                  <!-- ------------------ Step-1 ------------------- -->
+                  <div class="multisteps_form_panel">
+                  <div class="step_content text-center pt-3">
+                     <div class="count_clock ">
+                        <img src="assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_number countdown_timer pt-1" data-countdown="2022/10/24"></div>
+                  </div>
+                  <div class="form_content">
+                     <div class="question_title py-5 text-white">
+                        <h1 class="text-center text-uppercase overflow-hidden rounded-pill">The largest continent in
+                           the world is</h1>
+                     </div>
+                        <div class="row text-center form_items">
+                           <div class="col-md-6 py-3">
+                              <label id="opt_13" class="step_4 bg-white overflow-hidden rounded-pill text-center">
+                                 Africa
+                                 <input for="opt_13" type="radio" name="stp_4_select_option" value="Africa">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_14" class="step_4 bg-white overflow-hidden rounded-pill text-center">
+                                 Australia
+                                 <input for="opt_14" type="radio" name="stp_4_select_option" value="Australia" checked>
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_15" class="step_4 bg-white overflow-hidden rounded-pill text-center">
+                                 Asia
+                                 <input for="opt_15" type="radio" name="stp_4_select_option" value="Asia">
+                              </label>
+                           </div>
+                           <div class="col-md-6 py-3">
+                              <label id="opt_16" class="step_4 bg-white overflow-hidden rounded-pill text-center">
+                                 Antarctica
+                                 <input for="opt_16" type="radio" name="stp_4_select_option" value="Antarctica">
+                              </label>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+               <div class="row justify-content-center align-items-center pt-5">
+                  <div class="col-md-8">
+                        <!-- progress-bar -->
+                        <div class="step_progress_bar">
+                           <div class="progress rounded-pill">
+                              <div id="myBar" class="progress-bar rounded-pill overflow-hidden" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                           </div>
+                        </div>
+                        <div class="steps_number d-flex justify-content-around">
+                           <div class="step d-flex flex-column align-items-center position-relative text-center">
+                              <span class="text-white position-absolute rounded-pill active">1</span>
+                              <p class="pt-4 active">Question</p>
+                           </div>
+                           <div class="step d-flex flex-column align-items-center position-relative text-center">
+                              <span class="text-white position-absolute rounded-pill">2</span>
+                              <p class="pt-4">Question</p>
+                           </div>
+                           <div class="step d-flex flex-column align-items-center position-relative text-center">
+                              <span class="text-white position-absolute rounded-pill">3</span>
+                              <p class="pt-4">Question</p>
+                           </div>
+                           <div class="step d-flex flex-column align-items-center position-relative text-center">
+                              <span class="text-white position-absolute rounded-pill">4</span>
+                              <p class="pt-4">Question</p>
+                           </div>
+                        </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- jQuery-js include -->
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<!-- Countdown-js include -->
+<script src="./assets/js/countdown.js"></script>
+<!-- Bootstrap-js include -->
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- jQuery-validate-js include -->
+<script src="./assets/js/jquery.validate.min.js"></script>
+<!-- Custom-js include -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

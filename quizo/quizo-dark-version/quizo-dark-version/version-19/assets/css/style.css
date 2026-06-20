@@ -1,0 +1,432 @@
+@charset "UTF-8";
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 15rem;
+  overflow: hidden;
+}
+
+.multisteps_form_panel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+  height: 0;
+}
+
+.multisteps_form_panel.active {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+}
+
+.multisteps_form_panel[data-animation=scaleOut] {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.multisteps_form_panel[data-animation=scaleOut].active {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.multisteps_form_panel[data-animation=slideHorz] {
+  left: -50px;
+}
+
+.multisteps_form_panel[data-animation=slideHorz].active {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  left: 0;
+}
+
+.multisteps_form_panel[data-animation=slideVert] {
+  top: 30px;
+}
+
+.multisteps_form_panel[data-animation=slideVert].active {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  top: 0;
+}
+
+.multisteps_form_panel[data-animation=fadeIn].active {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.multisteps_form_panel[data-animation=scaleIn] {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.multisteps_form_panel[data-animation=scaleIn].active {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.form_content {
+  display: none;
+}
+
+.multisteps_form_panel.active .form_content {
+  display: block;
+}
+
+.audio_content .fas {
+  color: #000000;
+  font-size: 1.704375rem;
+  padding: 2.5rem;
+}
+.audio_content audio {
+  display: none;
+}
+
+.audio_title h1 {
+  color: #151515;
+  font-size: 3.75rem;
+}
+
+.content_box {
+  width: 70%;
+  height: 20.625rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 2px #dbd3d3;
+          box-shadow: 0px 0px 20px 2px #dbd3d3;
+}
+
+.question_title h6 {
+  font-size: 1.875rem;
+}
+
+.form_items label {
+  width: 80%;
+  font-size: 1.375rem;
+  padding-left: 3.5rem;
+  cursor: pointer;
+}
+.form_items label:after {
+  content: "";
+  top: 50%;
+  left: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid #999999;
+}
+.form_items label:before {
+  content: "";
+  top: 50%;
+  left: 17.6px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  display: none;
+}
+.form_items label.active:before {
+  display: block;
+}
+.form_items input {
+  opacity: 0;
+}
+.form_items .error + .error {
+  width: 289px;
+  height: 37px;
+  color: #ffffff;
+  font-size: 1rem;
+  top: -164px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: transparent;
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px;
+  border: 2px solid #ffffff;
+}
+.form_items .error + .error::after {
+  display: none;
+}
+
+.fomr_btn a {
+  color: #ffffff !important;
+}
+.fomr_btn a:hover {
+  color: #000000 !important;
+}
+
+.f_btn {
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+}
+
+.prev_btn {
+  bottom: 3%;
+  left: 23%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #214466;
+}
+.prev_btn:hover {
+  color: #000000;
+  background-color: #107eeb;
+}
+
+.next_btn {
+  bottom: 3%;
+  right: 37%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #107eeb;
+}
+.next_btn:hover {
+  color: #000000;
+  background-color: #214466;
+}
+
+body {
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Russo One", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition - start
+================================================== */
+a,
+button {
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end
+================================================== */
+.dark-version.dark-version {
+  background-color: #1a1a1a;
+}
+.dark-version.dark-version h1 {
+  color: #ffffff !important;
+}
+
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1399.98px) {
+  .audio_title h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .audio_title h1 {
+    font-size: 2rem;
+  }
+
+  .question_title h6 {
+    font-size: 1.4rem;
+  }
+
+  .form_items label {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .logo_area {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+
+  .audio_content .fas {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .audio_title h1 {
+    font-size: 1.5rem;
+  }
+
+  .content_box {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .question_title h6 {
+    font-size: 1rem;
+  }
+
+  .form_items label {
+    font-size: 0.8rem;
+  }
+
+  .f_btn {
+    font-size: 0.7rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .prev_btn {
+    bottom: 8%;
+    left: 28%;
+  }
+
+  .next_btn {
+    bottom: 8%;
+    right: 28%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .logo_area img {
+    width: 8rem;
+  }
+
+  .audio_content .fas {
+    padding: 1rem;
+  }
+
+  .audio_title h1 {
+    font-size: 1.2rem;
+  }
+
+  .question_title {
+    padding-left: 2rem !important;
+  }
+
+  .form_items {
+    padding-left: 2rem !important;
+  }
+
+  .f_btn {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .prev_btn {
+    left: 22%;
+  }
+
+  .next_btn {
+    right: 22%;
+  }
+}
+@media screen and (max-width: 319.98px) {
+  .logo_area img {
+    width: 5rem;
+  }
+
+  .audio_title h1 {
+    font-size: 0.8rem;
+  }
+
+  .question_title h6 {
+    font-size: 0.8rem;
+  }
+}

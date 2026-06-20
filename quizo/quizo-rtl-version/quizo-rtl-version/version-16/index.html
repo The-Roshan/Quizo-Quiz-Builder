@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quizo HTML RTL Template - V.16</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style-rtl.css">
+</head>
+
+<body>
+   <div class="wrapper position-relative">
+      <div class="container p-md-0">
+         <div class="logo_area pt-5">
+            <a href="index.html"><img src="./assets/images/logo/logo.png" alt="image_not_found"></a>
+         </div>
+         <!-- step-progress-bar -->
+         <div class="progress_bar">
+            <div class="step active current"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+         </div>
+         <form class="multisteps_form" id="wizard" method="POST" action="../mail.php">
+            <!--------------- Step-1 -------------->
+            <div class="multisteps_form_panel active">
+               <!-- form-content -->
+               <div class="form_content">
+                  <div class="video_player text-center">
+                     <!-- Trigger/Open The Modal -->
+                     <a href="#exampleModalToggle" class="video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/TvRhfaouBHs" data-bs-target="#myModal">
+                        <span class="rounded-pill"><i class="fas fa-play text-white rounded-pill"></i></span>
+                     </a>
+                  </div>
+                  <div class="question_number text-white">
+                     <span>Question Videos 1 / 4</span>
+                  </div>
+                  <div class="question_title text-white pt-5">
+                     <h1>Which of these walks reaches the highest altitude?</h1>
+                  </div>
+                  <div class="row form_items radio-list">
+                     <div class="col-md-4">
+                        <label for="opt_1" class="step_1 position-relative bg-white animate__animated animate__fadeInRight animate_25ms active">
+                           Tour du Mont
+                           <input id="opt_1" type="radio" name="stp_1_select_option" value="Tour du Mont">
+                           <span class="position-absolute"><i class="fas fa-cog"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_2" class="step_1 position-relative bg-white animate__animated animate__fadeInRight animate_50ms">
+                           Rideau Trail
+                           <input id="opt_2" type="radio" name="stp_1_select_option" value="Rideau Trail">
+                           <span class="position-absolute"><i class="fas fa-fingerprint"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_3" class="step_1 position-relative bg-white animate__animated animate__fadeInRight animate_100ms">
+                           Santiago, Chile
+                           <input id="opt_3" type="radio" name="stp_1_select_option" value="Santiago, Chile">
+                           <span class="position-absolute"><i class="fas fa-box"></i></span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               <!-- Progress-bar -->
+               <div class="progress position-absolute">
+                  <span><i class="far fa-clock position-absolute"></i></span>
+                  <div id="myBar" class="progress-bar mt-3" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+               <!-- Form-Button -->
+               <div class="form_btn">
+                  <button type="button" class="js-btn-next f_btn next_btn border-0 text-white position-absolute" id="nextBtn"></span><i class="fas fa-arrow-left"></i></span>
+                  </button>
+               </div>
+            </div>
+            <!--------------- Step-2 -------------->
+            <div class="multisteps_form_panel">
+               <!-- form-content -->
+               <div class="form_content">
+                  <div class="video_player text-center">
+                     <!-- Trigger/Open The Modal -->
+                     <a href="#exampleModalToggle" class="video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/07d2dXHYb94" data-bs-target="#myModal"><img src="./assets/images/video-player/video.png" alt="image_not_found"></a>
+                  </div>
+                  <div class="question_number text-white">
+                     <span>Question Videos 2 / 4</span>
+                  </div>
+                  <div class="question_title text-white pt-5">
+                     <h1>The office of the UN General Assembly is in</h1>
+                  </div>
+                  <div class="row form_items check-list">
+                     <div class="col-md-4">
+                        <label for="opt_4" class="step_2 position-relative text-start bg-white animate__animated animate__fadeInRight animate_25ms">
+                           Vienna
+                           <input id="opt_4" type="checkbox" class="required" name="stp_2_select_option" value="Vienna">
+                           <span class="position-absolute"><i class="fas fa-cog"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_5" class="step_2 position-relative text-start bg-white animate__animated animate__fadeInRight animate_50ms">
+                           New York
+                           <input id="opt_5" type="checkbox" name="stp_2_select_option" value="New York">
+                           <span class="position-absolute"><i class="fas fa-fingerprint"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_6" class="step_2 position-relative text-start bg-white animate__animated animate__fadeInRight animate_100ms">
+                           Paris
+                           <input id="opt_6" type="checkbox" name="stp_2_select_option" value="Paris">
+                           <span class="position-absolute"><i class="fas fa-box"></i></span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               <!-- Progress-bar -->
+               <div class="progress position-absolute">
+                  <span><i class="far fa-clock position-absolute"></i></span>
+                  <div id="myBar" class="progress-bar mt-3" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+               <!-- Form-Button -->
+               <div class="form_btn">
+                  <button type="button" class="js-btn-prev f_btn prev_btn border-0 text-white position-absolute" id="prevBtn"><span class="me-5"><i class="fas fa-arrow-right"></i></span> </button>
+                  <button type="button" class="js-btn-next f_btn next_btn border-0 text-white position-absolute" id="nextBtn"></span><i class="fas fa-arrow-left"></i></span>
+                  </button>
+               </div>
+            </div>
+            <!--------------- Step-3 -------------->
+            <div class="multisteps_form_panel">
+               <!-- form-content -->
+               <div class="form_content">
+                  <div class="video_player text-center">
+                     <!-- Trigger/Open The Modal -->
+                     <a href="#exampleModalToggle" class="video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/WjoDEQqyTig" data-bs-target="#myModal"><img src="./assets/images/video-player/video.png" alt="image_not_found"></a>
+                  </div>
+                  <div class="question_number text-white">
+                     <span>Question Videos 3 / 4</span>
+                  </div>
+                  <div class="question_title text-white pt-5">
+                     <h1>The headquarters of the UNESCO is at</h1>
+                  </div>
+                  <div class="row form_items check-list">
+                     <div class="col-md-4">
+                        <label for="opt_7" class="step_3 position-relative text-start bg-white animate__animated animate__fadeInRight animate_25ms">
+                           Geneva
+                           <input id="opt_7" type="checkbox" class="required" name="stp_3_select_option" value="Geneva">
+                           <span class="position-absolute"><i class="fas fa-cog"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_8" class="step_3 position-relative text-start bg-white animate__animated animate__fadeInRight animate_50ms">
+                           New York
+                           <input id="opt_8" type="checkbox" name="stp_3_select_option" value="New York">
+                           <span class="position-absolute"><i class="fas fa-fingerprint"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_9" class="step_3 position-relative text-start bg-white animate__animated animate__fadeInRight animate_100ms">
+                           Paris
+                           <input id="opt_9" type="checkbox" name="stp_3_select_option" value="Paris">
+                           <span class="position-absolute"><i class="fas fa-box"></i></span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               <!-- Progress-bar -->
+               <div class="progress position-absolute">
+                  <span><i class="far fa-clock position-absolute"></i></span>
+                  <div id="myBar" class="progress-bar mt-3" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+               <!-- Form-Button -->
+               <div class="form_btn">
+                  <button type="button" class="js-btn-prev f_btn prev_btn border-0 text-white position-absolute" id="prevBtn"><span class="me-5"><i class="fas fa-arrow-right"></i></span> </button>
+                  <button type="button" class="js-btn-next f_btn next_btn border-0 text-white position-absolute" id="nextBtn"></span><i class="fas fa-arrow-left"></i></span>
+                  </button>
+               </div>
+            </div>
+            <!--------------- Step-4 -------------->
+            <div class="multisteps_form_panel">
+               <!-- form-content -->
+               <div class="form_content">
+                  <div class="video_player text-center">
+                     <!-- Trigger/Open The Modal -->
+                     <a href="#exampleModalToggle" class="video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DidO2jcKGMw" data-bs-target="#myModal"><img src="./assets/images/video-player/video.png" alt="image_not_found"></a>
+                  </div>
+                  <div class="question_number text-white">
+                     <span>Question Videos 4 / 4</span>
+                  </div>
+                  <div class="question_title text-white pt-5">
+                     <h1>Which UN body deals with population problem?</h1>
+                  </div>
+                  <div class="row form_items radio-list">
+                     <div class="col-md-4">
+                        <label for="opt_10" class="step_4 position-relative bg-white animate__animated animate__fadeInRight animate_25ms">
+                           UNFPA
+                           <input id="opt_10" type="radio" class="required" name="stp_4_select_option" value="UNFPA">
+                           <span class="position-absolute"><i class="fas fa-cog"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_11" class="step_4 position-relative bg-white animate__animated animate__fadeInRight animate_50ms">
+                           UNICEF
+                           <input id="opt_11" type="radio" name="stp_4_select_option" value="UNICEF">
+                           <span class="position-absolute"><i class="fas fa-fingerprint"></i></span>
+                        </label>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="opt_12" class="step_4 position-relative bg-white animate__animated animate__fadeInRight animate_100ms">
+                           UNESCO
+                           <input id="opt_12" type="radio" name="stp_4_select_option" value="UNESCO">
+                           <span class="position-absolute"><i class="fas fa-box"></i></span>
+                        </label>
+                     </div>
+                  </div>
+               </div>
+               <!-- Progress-bar -->
+               <div class="progress position-absolute">
+                  <span><i class="far fa-clock position-absolute"></i></span>
+                  <div id="myBar" class="progress-bar mt-3" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+               <!-- Form-Button -->
+               <div class="form_btn">
+                  <button type="button" class="js-btn-prev f_btn prev_btn border-0 text-white position-absolute" id="prevBtn"><span class="me-5"><i class="fas fa-arrow-right"></i></span> </button>
+                  <button type="button" class="f_btn next_btn border-0 text-white position-absolute" id="nextBtn"><a href="../thankyou/index-1.html" class="text-decoration-none pe-4">Submit</a>
+                  </button>
+               </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-body">
+                        <button type="button" class="btn-close position-absolute bg-white" data-bs-dismiss="modal" aria-label="Close"></span>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                           <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <!-- jQuery-js include -->
+   <script src="./assets/js/jquery-3.6.0.min.js"></script>
+   <!-- Bootstrap-js include -->
+   <script src="./assets/js/bootstrap.min.js"></script>
+   <!-- jQuery-validate-js include -->
+   <script src="./assets/js/jquery.validate.min.js"></script>
+   <!-- Custom-js include -->
+   <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

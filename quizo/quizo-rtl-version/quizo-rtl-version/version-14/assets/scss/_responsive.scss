@@ -1,0 +1,116 @@
+/* ==================================================
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .question_title{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .form_items{
+        label{
+            width: 100%;
+        }
+    }
+    .f_btn{
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+    }
+    .prev_btn{
+        left: 35%;
+    }
+    .next_btn{
+        right: 15%;
+    }
+}
+// 02 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .content_box{
+        padding-left: 6rem;
+    }
+    .question_title{
+        h1{
+            font-size: 2rem;
+        }
+    }
+    .left-side-img{
+        img{
+            width: 20rem;
+            height: 25rem;
+        }
+    }
+    .prev_btn{
+        left: 30%;
+    }
+    .next_btn{
+        right: 20%;
+    }
+}
+// 03 - media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .logo_area{
+        text-align: center;
+        display: block;
+        margin-left: 0rem!important;
+        margin-bottom: 2rem;
+    }
+    .content_box{
+        padding-left: 0rem;
+    }
+    .question_number{
+        text-align: center;
+    }
+    .question_title{
+        h1{
+            text-align: center;
+            padding: 0rem 1rem;
+        }
+    }
+    .step_progress{
+        display: none;
+    }
+    .left-side-img{
+        img{
+            display: none;
+        }
+    }
+    .prev_btn{
+        left: 15%;
+    }
+    .next_btn{
+        right: 15%;
+    }
+}
+// 04 - media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .question_title{
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    .form_items{
+       margin: 0rem 3rem;
+       label{
+        font-size: 1rem;
+       }
+    }
+    .f_btn{
+        font-size: 0.6rem;
+        padding: 0.8rem;
+    }
+    .prev_btn{
+        left: 13%;
+    }
+    .next_btn{
+        right: 13%;
+    }
+}

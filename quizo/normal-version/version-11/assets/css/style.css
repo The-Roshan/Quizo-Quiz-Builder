@@ -1,0 +1,430 @@
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 115vh;
+  background-image: url("../images/background/bg_0.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 6rem;
+}
+
+.count_clock img {
+  width: 6rem;
+}
+.count_clock span {
+  font-size: 2.1875rem;
+  top: 59%;
+  left: 28px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9999;
+  font-family: "Roboto", sans-serif;
+}
+
+.step_progress {
+  top: 40%;
+  left: 230px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.step_progress .step {
+  width: 3.7rem;
+  height: 3.7rem;
+  line-height: 2.4rem;
+  font-size: 1.75rem;
+  background-color: #ffffff;
+  border: 0.7rem solid #dbdbdb;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.step_progress .step:after {
+  content: "";
+  width: 4px;
+  height: 25px;
+  top: 48px;
+  left: 17px;
+  position: absolute;
+  background-color: #dbdbdb;
+}
+.step_progress .step:last-child:after {
+  display: none;
+}
+.step_progress .step.active {
+  background: -webkit-linear-gradient(#fe6300, #ffae15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: #fe6300;
+}
+.step_progress .step.active::after {
+  background-color: #fe6300;
+}
+.step_progress .step.finish {
+  background: -webkit-linear-gradient(#fe6300, #ffae15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: #fe6300;
+}
+.step_progress .step.finish::after {
+  background-color: #fe6300;
+}
+
+.multisteps_form {
+  width: 50%;
+  height: 56.875rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  margin: -2rem auto;
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.question_number {
+  color: #e8e8e8;
+  font-size: 1.426875rem;
+  font-weight: 700;
+}
+
+.question_content {
+  width: 80%;
+  margin: 2rem auto;
+}
+.question_content:before {
+  content: "?";
+  top: -40%;
+  right: 10%;
+  position: absolute;
+  color: #eef9fd;
+  font-size: 16rem;
+  font-weight: 700;
+  z-index: 1;
+}
+.question_content h1 {
+  font-size: 3.125rem;
+  padding: 3rem 1rem;
+  font-weight: 800;
+  border: 0.8rem solid;
+  -o-border-image: linear-gradient(45deg, #fe6300, #ffae15) 10;
+     border-image: linear-gradient(45deg, #fe6300, #ffae15) 10;
+  z-index: 2;
+}
+
+.form_items label {
+  width: 80%;
+  font-size: 1.4375rem;
+  padding: 0.8rem 0rem;
+  padding-left: 4rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  background-color: #0d1424;
+  cursor: pointer;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.form_items label:before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  left: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  background-color: #464b57;
+  border: 2px solid #dbdbdb;
+  border-radius: 100%;
+}
+.form_items label span {
+  top: 50%;
+  left: 27px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.96375rem;
+}
+.form_items label input {
+  display: none;
+}
+.form_items label.active {
+  background: -webkit-gradient(linear, left top, right top, from(#fe6300), to(#ffae15));
+  background: linear-gradient(to right, #fe6300, #ffae15);
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+}
+.form_items label.active:before {
+  background-color: #fa893d;
+}
+
+.progress {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background: -webkit-gradient(linear, left top, right top, from(#fe6300), to(#ffae15));
+  background: linear-gradient(to right, #fe6300, #ffae15);
+}
+
+.f_btn {
+  font-size: 1.375rem;
+  padding: 0.5rem 2.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#fe6300), to(#ffae15));
+  background: linear-gradient(to right, #fe6300, #ffae15);
+  font-weight: 700;
+}
+
+.prev_btn {
+  left: 180px;
+  bottom: 100px;
+}
+.prev_btn:hover {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#ffae15), to(#fe6300));
+  background: linear-gradient(to right, #ffae15, #fe6300);
+}
+
+.next_btn {
+  right: 180px;
+  bottom: 100px;
+}
+.next_btn:hover {
+  color: #000000 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#ffae15), to(#fe6300));
+  background: linear-gradient(to right, #ffae15, #fe6300);
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Jost", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition - start
+================================================== */
+a,
+button {
+  -webkit-transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end
+================================================== */
+.step_area_fixed {
+  position: fixed;
+}
+
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.animate_150ms {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animate_200ms {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1399.98px) {
+  .question_number {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .question_content:before {
+    top: -25%;
+    right: 8%;
+    font-size: 13rem;
+    font-weight: 700;
+  }
+  .question_content h1 {
+    font-size: 2.5rem;
+    padding: 2rem 1.1rem;
+  }
+
+  .f_btn {
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .multisteps_form {
+    height: 49rem;
+    margin-bottom: 6rem;
+  }
+
+  .question_number {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .question_content:before {
+    top: -20%;
+    font-size: 10rem;
+    font-weight: 600;
+  }
+  .question_content h1 {
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .form_items label {
+    font-size: 1rem;
+    padding: 0.6rem 0rem;
+    padding-left: 3.5rem;
+  }
+  .form_items label:before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    left: 12px;
+  }
+  .form_items label span {
+    left: 23px;
+  }
+
+  .prev_btn {
+    left: 230px;
+    bottom: 100px;
+  }
+
+  .next_btn {
+    right: 230px;
+    bottom: 100px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .multisteps_form {
+    height: 45rem;
+  }
+
+  .question_content:before {
+    top: -18%;
+    right: 10%;
+    font-size: 7rem;
+    font-weight: 500;
+  }
+  .question_content h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .form_items label {
+    font-size: 1rem;
+    padding: 0.6rem 0rem;
+    padding-left: 3.5rem;
+  }
+  .form_items label:before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    left: 12px;
+  }
+  .form_items label span {
+    left: 23px;
+  }
+
+  .step_progress {
+    left: 180px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .logo_area {
+    text-align: center;
+    display: block;
+    margin-left: 0rem !important;
+  }
+
+  .multisteps_form {
+    width: 70%;
+    margin-top: 3rem;
+  }
+
+  .count_clock {
+    display: none;
+  }
+
+  .step_progress {
+    display: none;
+  }
+
+  .prev_btn {
+    left: 70px;
+    bottom: 100px;
+    padding: 0.5rem 1rem;
+  }
+
+  .next_btn {
+    right: 70px;
+    bottom: 100px;
+    padding: 0.5rem 1rem;
+  }
+}

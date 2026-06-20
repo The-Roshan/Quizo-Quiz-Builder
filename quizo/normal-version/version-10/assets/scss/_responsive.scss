@@ -1,0 +1,148 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .question_title{
+        h1{
+            width: 80%;
+            font-size: 2rem;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+    }
+    label{
+        width: 90%;
+        font-size: 1.1rem;
+    }
+    .step{
+        span{
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    .form_btn{
+        left: 11%;
+    }
+    .prev_btn{
+        padding: 0.6rem;
+        font-weight: 500;
+    }
+    .next_btn{
+        padding: 0.6rem;
+        font-weight: 500;
+    }
+}
+// media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .question_title{
+        h1{
+            width: 70%;
+            font-size: 1.5rem;
+            padding: 1.7rem;
+        }
+    }
+    label{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .form_btn{
+        left: 20%;
+    }
+    .next_btn{
+        margin-top: 0.5rem;
+    }
+}
+// media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .steps_area{
+        position: static;
+    }
+    label{
+        padding: 1rem 2rem;
+    }
+    .steps_number{
+        margin-bottom: 10rem;
+    }
+    .form_btn{
+        left: 30%;
+        bottom: 5%;
+    }
+}
+// media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .question_title{
+        h1{
+            padding: 1.5rem;
+        }
+    }
+    label{
+        width: 80%;
+        padding: 1rem 2rem;
+    }
+    .progress{
+        width: 90%;
+    }
+    .step{
+        span{
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            top: -40px;
+            left: 15px;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .form_btn{
+        left: 20%;
+    }
+}
+// media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .question_title{
+        h1{
+            width: 90%;
+            font-size: 1rem;
+            padding: 1.5rem;
+        }
+    }
+    label{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+    .progress{
+        width: 90%;
+    }
+    .step{
+        span{
+            width: 3rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            top: -40px;
+            left: 15px;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .form_btn{
+        bottom: 2%;
+        left: 15%;
+    }
+}

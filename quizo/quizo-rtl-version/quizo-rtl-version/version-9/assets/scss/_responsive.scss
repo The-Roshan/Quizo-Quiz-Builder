@@ -1,0 +1,168 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1500px)
+*   02 - media screen and (max-width: 1400px)
+*   03 - media screen and (max-width: 1200px)
+*	04 - media screen and (max-width: 992px)
+*	05 - media screen and (max-width: 768px)
+*	06 - media screen and (max-width: 576px)
+*	07 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01. media screen and (max-width: 1500px)
+@media screen and(max-width: 1499.98px){
+    .step_items {
+        &:before{
+            height: 250px;
+        }
+    }
+    .count_box{
+        width: 21rem;
+    }
+    .count_title{
+        h4{
+            font-size: 1rem;
+        }
+        span{
+            font-size: 1rem;
+        }
+    }
+    .count_number div {
+        min-width: 50px;
+    }
+    .count_hours,
+    .count_min,
+    .count_sec{
+        h3{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        span{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    }
+}
+// 02. media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .count_box{
+        width: 18rem;
+        height: 5rem;
+    }
+    .count_title{
+        h4{
+            font-size: 1rem;
+        }
+        span{
+            font-size: 1rem;
+        }
+    }
+    .count_number{
+        width: 13rem;
+        height: 4rem;
+    }
+    .count_number div {
+        min-width: 40px;
+    }
+    .count_hours,
+    .count_min,
+    .count_sec{
+        h3{
+            font-size: 1.3rem;
+        }
+        span{
+            font-size: 0.7rem;
+        }
+    }
+}
+// 03. media screen and (max-width: 1300px)
+@media screen and(max-width: 1299.98px){
+    .multisteps_form_panel{
+        padding-top: 2rem;
+    }
+    .step_content{
+        padding-top: 0rem!important;
+    }
+    .question_title{
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+// 04. media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .form_logo{
+        margin-top: 3rem;
+        position: inherit!important;
+        text-align: center;
+    }
+    .count_box{
+        top: 20px;
+        right: 20px;
+        position: inherit;
+    }
+    .multisteps_form_panel{
+        padding-top: 2rem;
+    }
+    .step_content{
+        padding-top: 0rem!important;
+    }
+    .question_title{
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+// 05. media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .question_title{
+        h1{
+            font-size: 2.2rem;
+        }
+    }
+    label{
+        margin-top: 1rem;
+    }
+    .step_box_icon{
+        img{
+            padding-top: 0rem;
+        }
+    }
+}
+// 06. media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .step_content{
+        h4{
+            font-size: 1.3rem;
+        }
+        span{
+            font-size: 0.8rem;
+        }
+    }
+    .question_title{
+        padding: 2rem 0rem!important;
+    }
+    .prev_btn{
+        font-size: 0.7rem;
+        padding: 0.7rem;
+        font-weight: 500;
+    }
+    .next_btn{
+        font-size: 0.7rem;
+        padding: 0.7rem;
+        font-weight: 500;
+    }
+}
+// 07. media screen and (max-width: 380px)
+@media screen and(max-width: 379.98px){
+    .prev_btn{
+        font-size: 0.5rem;
+        padding: 0.6rem;
+    }
+    .next_btn{
+        font-size: 0.5rem;
+        padding: 0.6rem;
+    }
+}

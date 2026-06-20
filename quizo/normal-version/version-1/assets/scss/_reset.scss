@@ -1,0 +1,49 @@
+body{
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Oswald', sans-serif;
+}
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Transition ============================ */
+a,
+button {
+  transition: $default_transition;
+}
+// Custom animation delay ==============
+.animate_25ms{
+  animation-delay: 25ms;
+}
+.animate_50ms{
+  animation-delay: 50ms;
+}
+.animate_100ms{
+  animation-delay: 100ms;
+}
+.animate_150ms{
+  animation-delay: 150ms;
+}
+.animate_200ms{
+  animation-delay: 200ms;
+}
+// Media query ==========================
+@media (min-width: 1500px){
+  .container{
+    max-width: 1410px;
+  }
+}

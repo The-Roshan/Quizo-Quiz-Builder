@@ -1,0 +1,183 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .clock_area{
+        img{
+            width: 8rem;
+            height: 9rem;
+        }
+        span{
+            font-size: 1.8rem;
+        }
+    }
+    .content_box{
+        max-width: 40rem;
+        min-height: 15rem;
+        &:after{
+            width: 30rem;
+            bottom: -5%;
+        }
+    }
+    .service_img{
+        img{
+            width: 19rem;
+        }
+    }
+}
+// 02 - media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .clock_area{
+        img{
+            width: 6rem;
+            height: 7rem;
+        }
+        span{
+            font-size: 1rem;
+        }
+    }
+    .content_box{
+        max-width: 35rem;
+        min-height: 12rem;
+        &:after{
+            width: 25rem;
+        }
+    }
+    .question_title{
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    .service_img{
+        img{
+            width: 12rem;
+        }
+    }
+    .step_progress{
+        right: 8%;
+    }
+}
+// 03 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .service_img{
+        img{
+            display: none;
+        }
+    }
+    .step_progress{
+        display: none;
+    }
+}
+// 04 - media screen and (max-width: 767px)
+@media screen and(max-width: 767.98px){
+    .logo_area{
+        text-align: center;
+        display: block;
+        padding-bottom: 4rem;
+        margin-left: 0rem!important;
+    }
+    .card{
+        width: 15rem;
+    }
+    .form_items{
+        .box_1, .box_2{
+            span{
+                &:before{
+                    top: -66px;
+                }
+            }
+        }
+        .box_3, .box_4{
+            span{
+                &:before{
+                    top: -76px;
+                }
+            }
+        }
+        label{
+            width: 13rem;
+            height: 12rem;
+            &:before{
+                width: 15rem;
+                padding: 0.5rem 6.8rem;
+            }
+        }
+    }
+    .f_btn{
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+    }
+    .prev_btn{
+        right: 150px;
+    }
+}
+// 04 - media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .content_box{
+        max-width: 30rem;
+        min-height: 10.75rem;
+        &:after{
+            width: 20rem;
+            bottom: -4%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+        }
+    }
+    .card{
+        width: 11rem;
+    }
+    .form_items{
+        .box_1, .box_2{
+            span{
+                top: -11%;
+                left: 46%;
+                &:before{
+                    top: -67px;
+                    height: 40px;
+                }
+            }
+        }
+        .box_3, .box_4{
+            span{
+                top: -10%;
+                left: 46%;
+                &:before{
+                    top: -77px;
+                    height: 49px;
+                }
+            }
+        }
+        label{
+            width: 10rem;
+            height: 9rem;
+            &:before{
+                width: 11rem;
+                padding: 0.5rem 5rem;
+                right: 0px;
+            }
+        }
+        .card-title{
+            margin-top: 3rem;
+        }
+    }
+    .f_btn{
+        font-size: 0.7rem;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+    }
+    .prev_btn{
+        right: 128px;
+    }
+}

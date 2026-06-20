@@ -1,0 +1,154 @@
+/* ==================================================
+*	01 - media screen and (max-width: 1440px)
+*	02 - media screen and (max-width: 1280px)
+*	03 - media screen and (max-width: 1199px)
+*	04 - media screen and (max-width: 991px)
+*	05 - media screen and (max-width: 767px)
+*	06 - media screen and (max-width: 680px)
+*	07 - media screen and (max-width: 580px)
+*	08 - media screen and (max-width: 480px)
+*	09 - media screen and (max-width: 380px)
+*	10 - media screen and (max-width: 320px)
+================================================== */
+// 01. media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px) {
+  .form_title{
+    h1{
+      font-size: 3.5rem;
+    }
+  }
+}
+// 02. media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px) {
+  .form_title{
+    h1{
+      font-size: 3rem;
+    }
+  }
+  .form_items{
+    label{
+      padding: 0rem 1rem;
+    }
+    span{
+      padding: 0.5rem 0.7rem;
+    }
+  }
+  .form_btn{
+    .f_btn{
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+// 03. media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px) {
+  .step_bar_content{
+    text-align: center;
+    padding-left: 0!important;
+  }
+  .progress_bar{
+    text-align: center;
+    padding-left: 0!important;
+    display: block!important;
+  }
+  .form_content{
+    padding-top: 3rem;
+  }
+  .form_title{
+    text-align: center;
+    padding-left: 0!important;
+  }
+  .form_img{
+    img{
+      width: 40%;
+    }
+  }
+  .form_items{
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .form_btn{
+    .f_btn{
+      font-size: 0.8rem;
+      padding: 1rem 2rem;
+    }
+  }
+}
+// 04. media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px) {
+  .form_title{
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .form_btn{
+    .f_btn{
+      padding: 0.8rem 1rem;
+    }
+  }
+}
+// 05. media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px) {
+  .form_title{
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .form_img{
+    img{
+      display: none;
+    }
+  }
+  .form_btn{
+    .f_btn{
+      padding: 0.8rem 1rem;
+    }
+  }
+}
+// 06. media screen and (max-width: 380px)
+@media screen and(max-width: 379.98px) {
+  .step_bar_content{
+    h5{
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  }
+  .step{
+    height: 1.6rem;
+    width: 1.6rem;
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+    &:after{
+      left: 30px;
+      width: 1.1rem;
+      height: 0.125rem;
+    }
+  }
+  .form_title{
+    padding: 0rem;
+    h1{
+      font-size: 1.5rem;
+    }
+  }
+  .form_items{
+    label{
+      padding: 0rem;
+    }
+    span{
+      padding: 0.5rem 0.7rem;
+    }
+    .label-content {
+      min-width: 150px;
+    }
+  }
+  .form_btn{
+    .f_btn{
+      font-size: 0.6rem;
+      padding: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+// ================ Multi-step css =================
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  background-image:linear-gradient(to right, rgba(33, 147, 176, 0.7), rgba(18, 124, 148, 0.7)), url('../images/bg-img/bg-1.png');
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 1.25rem;
+}
+.count_box{
+  width: 19rem;
+  height: 6.0625rem;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+.count_clock{
+  img{
+    width: 3.125rem;
+  }
+}
+.count_title{
+  h4{
+    color: $defaultColor;
+    font-size: 1.375rem;
+    margin-bottom: -0.4rem;
+  }
+  span{
+    color: $defaultColor;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+}
+.count_number{
+  width: 7rem;
+  height: 5rem;
+  h3{
+    color: $defaultColor;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 0.9rem;
+    margin-bottom: -0.3rem;
+  }
+  span{
+    color: #595959;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
+// ------------ Multi-step-form --------->
+.multisteps_form{
+  width: 70%;
+  min-height: 43.75rem;
+  background-image: url('../images/bg-img/bg-2.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
+.form_header_content{
+  padding-top: 0.625rem;
+  h2 {
+    font-size: 2.8125rem;
+    background: -webkit-linear-gradient(#36d0dc, #5a87e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+  }
+  span{
+    color: $defaultColor;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+// -------- Hidden Panel --------
+.multisteps_form_panel{
+  display: none;
+}
+.question_number{
+  color: $defaultColor;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-right: 5.176rem;
+}
+.progress{
+  width: 85%;
+  margin: 2.1875rem 0 1.25rem 3.75rem;
+  .progress-bar{
+    background: linear-gradient(to right, #36d1dc, #5b87e5);
+  }
+}
+h1{
+  color: $defaultColor;
+  font-size: 2.4375rem;
+}
+.form_items{
+  padding-left: 1.25rem;
+  li{
+    width: 70%;
+    color: $defaultColor;
+    font-size: 1.3125rem;
+    padding: 0.9375rem 0rem;
+    background-color: #fbfbfb;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &.active{
+      background-color: #e9e9e9;
+    }
+    input{
+      display: none;
+    }
+    label{
+      padding-left: 1.125rem;
+      cursor: pointer;
+    }
+    &:after{
+      content: "";
+      width: 1.875rem;
+      height: 1.875rem;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      position: absolute;
+      border-radius: 100%;
+      border: 2px solid #e2e2e2;
+      background: linear-gradient(#38cedc, #5784dd);
+    }
+    &:before{
+      content: "\f00c";
+      top: 50%;
+      left: 21px;
+      transform: translateY(-50%);
+      position: absolute;
+      color: $white;
+      font-size: 1.5625rem;
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      display: none;
+      z-index: 1;
+    }
+    &.active{
+      &:before{
+        display: block;
+      }
+    }
+  }
+}
+.form_btn{
+  .f_btn{
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 0.9375rem 1.5625rem;
+    outline: none;
+    border: none;
+    margin-right: 0.625rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .disable{
+    color: $white;
+    background-color: $black;
+    &:hover{
+      color: $black!important;
+      background-color: $white;
+    }
+  }
+  .active{
+    color: $white;
+    background: linear-gradient(to right,#36d0dc, #5b87e5);
+    &:hover{
+      color: $black!important;
+      background: linear-gradient(to right,#5b87e5, #36d0dc);
+    }
+  }
+}

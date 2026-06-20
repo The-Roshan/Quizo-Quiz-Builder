@@ -1,0 +1,240 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1500px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1500px)
+@media screen and(max-width: 1499.98px){
+    .form_items{
+        left: 82px;
+        label{
+            width: 200px;
+            height: 180px;
+        }
+    }
+}
+// 02 - media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .form_items{
+        bottom: -30%;
+        left: 48px;
+        label{
+            width: 180px;
+            height: 160px;
+        }
+    }
+    .step{
+        &:not(:last-child){
+            margin-right: 7rem;
+        }
+    }
+    .next_btn, .prev_btn{
+        bottom: 4%;
+    }
+}
+// 03 - media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .form_items{
+        left: 45px;
+        label{
+            width: 150px;
+            height: 140px;
+            font-size: 1rem;
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+        }
+    }
+    .step{
+        &:not(:last-child){
+            margin-right: 5rem;
+        }
+        span{
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 2rem;
+            font-weight: 500;
+            top: -44px;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .progress{
+        width: 98%;
+        height: 20px;
+        top: 140px;
+    }
+    .next_btn, .prev_btn{
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 0.5rem 1.2rem;
+    }
+}
+// 04 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .question_title{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .form_items{
+        bottom: -0%;
+        left: 10px;
+        label{
+            width: 120px;
+            height: 110px;
+            padding-top: 2rem;
+            span{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .step_progress_bar{
+        padding-top: 3rem;
+    }
+    .step{
+        &:not(:last-child){
+            margin-right: 2.5rem;
+        }
+        span{
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .next_btn, .prev_btn{
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.4rem 1rem;
+    }
+}
+// 05 - media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .form_content{
+        width: 100%;
+    }
+    .question_title{
+        h1{
+            font-size: 2rem;
+            padding: 5rem 2rem 0rem 2rem;
+        }
+    }
+    .form_items{
+        bottom: -15%;
+        left: 0px;
+        label{
+            width: 170px;
+            height: 130px;
+            margin-top: 3rem;
+            padding-top: 3rem;
+        }
+    }
+    .form_btn{
+        margin-top: 5rem;
+    }
+    .next_btn, .prev_btn{
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0.4rem 1rem;
+    }
+}
+// 06 - media screen and (max-width: 400px)
+@media screen and(max-width: 399.98px){
+    .form_items{
+        bottom: -15%;
+        left: 0px;
+        label{
+            width: 130px;
+            height: 110px;
+            span{
+                top: -20px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 1rem;
+            }
+        }
+    }
+    .step{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+        span{
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .next_btn{
+        right: 50px;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .prev_btn{
+        left: 50px;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+// 07 - media screen and (max-width: 400px)
+@media screen and(max-width: 399.98px){
+    .form_items{
+        label{
+            width: 130px;
+            height: 110px;
+            span{
+                top: -20px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 1rem;
+            }
+        }
+    }
+    .step{
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+        span{
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .next_btn{
+        right: 50px;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .prev_btn{
+        left: 50px;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+// 08 - media screen and (max-width: 320px)

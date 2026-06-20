@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quizo HTML Template - V.14</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+   <div class="wrapper position-relative overflow-hidden">
+      <!-- Top content -->
+      <div class="container-fluid p-0">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="logo_area mt-5 ms-5">
+                  <a href="index.html">
+                     <img src="./assets/images/logo/logo.png" alt="image_not_found">
+                  </a>
+               </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+               <div class="clock_area countdown_timer position-relative mt-5 me-5 float-end" data-countdown="2022/10/24">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container p-0">
+         <form class="multisteps_form" id="wizard" method="POST" action="../thankyou/index-2.html">
+            <!------------------------- Step-1 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="col-md-7 m-auto">
+                     <div class="content_box position-relative">
+                        <div class="question_number text-uppercase">
+                           <span>question 1 / 4</span>
+                        </div>
+                        <div class="question_title py-3 text-uppercase">
+                           <h1>Which is the abundant gas in the earth’s atmosphere?</h1>
+                        </div>
+                        <div class="form_items">
+                           <label for="opt_1" class="step_1 rounded-pill position-relative bg-white">
+                              Carbon Dioxide
+                              <input id="opt_1" type="radio" name="stp_1_select_option" value="Carbon Dioxide" checked>
+                              <span class="position-absolute">A</span>
+                           </label>
+                           <label for="opt_2" class="step_1 rounded-pill position-relative bg-white">
+                              Oxygen
+                              <input id="opt_2" type="radio" name="stp_1_select_option" value="Oxygen">
+                              <span class="position-absolute">B</span>
+                           </label>
+                           <label for="opt_3" class="step_1 rounded-pill position-relative bg-white active">
+                              Nitrogen
+                              <input id="opt_3" type="radio" name="stp_1_select_option" value="Nitrogen">
+                              <span class="position-absolute">C</span>
+                           </label>
+                           <label for="opt_4" class="step_1 rounded-pill position-relative bg-white">
+                              Argon
+                              <input id="opt_4" type="radio" name="stp_1_select_option" value="Argon">
+                              <span class="position-absolute">D</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!------------------------- Step-2 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="col-md-7 m-auto">
+                     <div class="content_box m-auto position-relative">
+                        <div class="question_number text-uppercase">
+                           <span>question 2 / 4</span>
+                        </div>
+                        <div class="question_title py-3 text-uppercase">
+                           <h1>The major crude oil markets are the</h1>
+                        </div>
+                        <div class="form_items">
+                           <label for="opt_5" class="step_2 rounded-pill position-relative bg-white">
+                              Middle East regions
+                              <input id="opt_5" type="radio" name="stp_2_select_option" value="Middle East regions" checked>
+                              <span class="position-absolute">A</span>
+                           </label>
+                           <label for="opt_6" class="step_2 rounded-pill position-relative bg-white">
+                              far east regions
+                              <input id="opt_6" type="radio" name="stp_2_select_option" value="far east regions">
+                              <span class="position-absolute">B</span>
+                           </label>
+                           <label for="opt_7" class="step_2 rounded-pill position-relative bg-white">
+                              both (a) and (b)
+                              <input id="opt_7" type="radio" name="stp_2_select_option" value="both (a) and (b)">
+                              <span class="position-absolute">C</span>
+                           </label>
+                           <label for="opt_8" class="step_2 rounded-pill position-relative bg-white">
+                              None of the above
+                              <input id="opt_8" type="radio" name="stp_2_select_option" value="None of the above">
+                              <span class="position-absolute">D</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!------------------------- Step-3 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="col-md-7 m-auto">
+                     <div class="content_box m-auto position-relative">
+                        <div class="question_number text-uppercase">
+                           <span>question 3 / 4</span>
+                        </div>
+                        <div class="question_title py-3 text-uppercase">
+                           <h1>The lowest point, on land, in the world is</h1>
+                        </div>
+                        <div class="form_items">
+                           <label for="opt_9" class="step_3 rounded-pill position-relative bg-white">
+                              Death valley, USA
+                              <input id="opt_9" type="radio" name="stp_3_select_option" value="Death valley, USA" checked>
+                              <span class="position-absolute">A</span>
+                           </label>
+                           <label for="opt_10" class="step_3 rounded-pill position-relative bg-white">
+                              Caspian sea, Russia
+                              <input id="opt_10" type="radio" name="stp_3_select_option" value="Caspian sea, Russia">
+                              <span class="position-absolute">B</span>
+                           </label>
+                           <label for="opt_11" class="step_3 rounded-pill position-relative bg-white">
+                              Dead sea, Jordan
+                              <input id="opt_11" type="radio" name="stp_3_select_option" value="Dead sea, Jordan">
+                              <span class="position-absolute">C</span>
+                           </label>
+                           <label for="opt_12" class="step_3 rounded-pill position-relative bg-white">
+                              Lake Eyre, Australia
+                              <input id="opt_12" type="radio" name="stp_3_select_option" value="Lake Eyre, Australia">
+                              <span class="position-absolute">D</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!------------------------- Step-4 ----------------------------->
+            <div class="multisteps_form_panel">
+               <div class="row">
+                  <div class="col-md-7 m-auto">
+                     <div class="content_box m-auto position-relative">
+                        <div class="question_number text-uppercase">
+                           <span>question 4 / 4</span>
+                        </div>
+                        <div class="question_title py-3 text-uppercase">
+                           <h1>The most densely populated country of Africa is</h1>
+                        </div>
+                        <div class="form_items">
+                           <label for="opt_13" class="step_4 rounded-pill position-relative bg-white">
+                              Rwanda
+                              <input id="opt_13" type="radio" name="stp_4_select_option" value="Rwanda" checked>
+                              <span class="position-absolute">A</span>
+                           </label>
+                           <label for="opt_14" class="step_4 rounded-pill position-relative bg-white">
+                              Burundi
+                              <input id="opt_14" type="radio" name="stp_4_select_option" value="Burundi">
+                              <span class="position-absolute">B</span>
+                           </label>
+                           <label for="opt_15" class="step_4 rounded-pill position-relative bg-white">
+                              Mauritius
+                              <input id="opt_15" type="radio" name="stp_4_select_option" value="Mauritius">
+                              <span class="position-absolute">C</span>
+                           </label>
+                           <label for="opt_16" class="step_4 rounded-pill position-relative bg-white">
+                              Sierra Leone
+                              <input id="opt_16" type="radio" name="stp_4_select_option" value="Sierra Leone">
+                              <span class="position-absolute">D</span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Left-side-img -->
+            <div class="left-side-img">
+               <img src="./assets/images/background/bg_1.png" alt="image_not_found">
+            </div>
+            <!-- Step-progress -->
+            <div class="step_progress position-absolute">
+               <div class="step rounded-pill position-relative text-center">1</div>
+               <div class="step rounded-pill position-relative text-center mt-4">2</div>
+               <div class="step rounded-pill position-relative text-center mt-4">3</div>
+               <div class="step rounded-pill position-relative text-center mt-4">4</div>
+            </div>
+         </form>
+         <!------------------------- Form button ----------------------------->
+         <div class="form_btn">
+            <button type="button" class="f_btn prev_btn text-uppercase rounded-pill position-absolute" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+               Question</button>
+               <button type="button" class="f_btn next_btn text-uppercase rounded-pill position-absolute" id="nextBtn"
+               onclick="nextPrev(1)">Next</button>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery-js include -->
+      <script src="./assets/js/jquery-3.6.0.min.js"></script>
+      <!-- jQuery-js include -->
+      <script src="./assets/js/countdown.js"></script>
+      <!-- Bootstrap-js include -->
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <!-- jQuery-validate-js include -->
+      <script src="./assets/js/jquery.validate.min.js"></script>
+      <!-- Custom-js include -->
+      <script src="./assets/js/script.js"></script>
+   </body>
+   </html>

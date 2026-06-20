@@ -1,0 +1,202 @@
+/* ==================================================
+*	01 - media screen and (max-width: 1500px)
+*   01 - media screen and (max-width: 1400px)
+*	02 - media screen and (max-width: 1200px)
+*	04 - media screen and (max-width: 991px)
+*	05 - media screen and (max-width: 767px)
+*	07 - media screen and (max-width: 575px)
+*	08 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// media screen and (max-width: 1500px)
+@media screen and(max-width: 1499.98px){
+    .f_btn{
+        font-size: 1rem;
+    }
+    .next_btn{
+        padding: 0.8375rem 2.5rem;
+    }
+    .prev_btn{
+        padding: 0.8375rem 1.3625rem;
+    }
+}
+// media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .step_progress{
+        text-align: center;
+    }
+    .next_btn{
+        padding: 0.8375rem 1.5rem;
+    }
+}
+// media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .multisteps_form{
+        min-height: 48rem;
+    }
+    .question_number{
+        span{
+            font-size: 2rem;
+        }
+    }
+    .question_title{
+        h1{
+            font-size: 2rem;
+            padding: 1.3rem!important;
+        }
+    }
+    .form_items_content{
+        label{
+            padding: 2rem;
+        }
+    }
+    .form_items_icon{
+        img{
+            width: 3rem;
+        }
+    }
+    .form_items_text{
+        font-size: 0.8rem;
+    }
+    .f_btn{
+        font-size: 0.8rem;
+    }
+    .next_btn{
+        padding: 0.7375rem 1.2rem;
+        margin-right: .1rem;
+    }
+    .prev_btn{
+        padding: 0.8375rem 1.3625rem;
+    }
+}
+// media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .count_box{
+        max-width: 22rem;
+        min-height: 5rem;
+    }
+    .count_clock{
+        img{
+            width: 2.5rem;
+        }
+    }
+    .count_title{
+        h4{
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: -0.4rem;
+        }
+        span{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    }
+    .count_number{
+        width: 11rem;
+        height: 4rem;
+        .count_hours,
+        .count_min,
+        .count_sec{
+            h3{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            span{
+                font-size: 1rem;
+                font-weight: 600;
+                padding-left: 0rem;
+            }
+            &:after{
+                right: 61px;
+            }
+            &:before{
+                left: 64px;
+            }
+        }
+    }
+    .multisteps_form{
+        min-height: 42rem;
+    }
+    .question_title{
+        h1{
+            font-size: 1.5rem;
+            padding: 0.5rem!important;
+        }
+    }
+    .form_items_content{
+        &:after {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &:before {
+            right: 39px;
+            font-size: 1rem;
+        }
+    }
+    .form_items_icon{
+        img{
+            width: 2rem;
+        }
+    }
+    .form_items_text{
+        font-size: 0.6rem;
+    }
+    .f_btn{
+        font-size: 0.5rem;
+    }
+    .next_btn{
+        padding: 0.5375rem 0.5rem;
+    }
+    .prev_btn{
+        padding: 0.5375rem 0.5rem;
+    }
+}
+// media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .logo_area{
+        text-align: center;
+        padding-left: 0rem!important;
+        padding-bottom: 2rem;
+        margin-top: 1rem!important;
+    }
+    .multisteps_form{
+        min-height: 45rem;
+    }
+    .question_title{
+        h1{
+            padding: 1rem!important;
+        }
+    }
+    .form_items_icon{
+        img{
+            width: 5rem;
+        }
+    }
+    .form_items_text{
+        font-size: 1rem;
+    }
+    .f_btn{
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+}
+// media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .f_btn{
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+}
+// media screen and (max-width: 380px)
+@media screen and(max-width: 379.98px){
+    .question_number{
+        span{
+            font-size: 1.5rem;
+        }
+    }
+    .f_btn{
+        font-size: 0.6rem;
+        margin-bottom: 2rem;
+    }
+}

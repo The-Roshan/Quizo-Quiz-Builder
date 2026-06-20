@@ -1,0 +1,182 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .question_title{
+        h1{
+            font-size: 1.8rem;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 1rem;
+        }
+    }
+}
+// 02 - media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .clock_area{
+        img{
+            width: 5rem;
+        }
+    }
+    .clock_number{
+        top: 72%;
+        right: 75px;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .form_content{
+        height: 53rem;
+    }
+    iframe{
+        height: 19rem;
+    }
+    .play-video, .stop-video{
+        top: 17%;
+        .fas{
+            font-size: 1rem;
+            padding: 2rem;
+        }
+    }
+    .question_title{
+        h1{
+            font-size: 1.3rem;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 1rem;
+        }
+    }
+}
+// 03 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .form_content{
+        height: 50rem;
+    }
+}
+// 04 - media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .form_content {
+        height: 45rem;
+    }
+    iframe{
+        height: 12rem;
+    }
+    .play-video, .stop-video{
+        .fas{
+            font-size: 1rem;
+            padding: 1.8rem;
+        }
+    }
+    .play-video, .stop-video{
+        top: 14%;
+        left: 38%;
+    }
+    .question_title{
+        h1{
+            font-size: 1rem;
+            padding-top: 0rem!important;
+            text-align: center;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 0.8rem;
+            &:after{
+                width: 1.7rem;
+                height: 1.7rem;
+            }
+            &:before{
+                left: 20px;
+                font-size: 1rem;
+            }
+        }
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem!important;
+    }
+    .f_btn{
+        font-size: 0.7rem;
+        padding: 0.7rem 2rem!important;
+    }
+}
+// 05 - media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .logo_area{
+        text-align: center;
+        padding-left: 0!important;
+        padding-bottom: 1rem;
+    }
+    .clock_area{
+        display: none;
+    }
+    .question_title{
+        h1{
+            font-size: 0.8rem;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 0.6rem;
+            &:after{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            &:before{
+                left: 17.8px;
+            }
+        }
+    }
+    .btn{
+        font-size: 0.7rem;
+        padding: 0.6rem 1.2rem!important;
+    }
+    .f_btn{
+        padding: 0.6rem 1.5rem!important;
+    }
+}
+// 06 - media screen and (max-width: 380px)
+@media screen and(max-width: 379.98px){
+    .form_content {
+        height: 40rem;
+    }
+    .question_title{
+        h1{
+            font-size: 0.6rem;
+        }
+    }
+    .form_items{
+        padding-top: 1rem!important;
+        label{
+            font-size: 0.5rem;
+            padding: 0.6rem 0rem;
+            padding-left: 3rem;
+            &:after{
+                left: 6px;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            &:before{
+                left: 10px;
+            }
+        }
+    }
+    .btn{
+        font-size: 0.7rem;
+        padding: 0.6rem 1.2rem!important;
+    }
+    .f_btn{
+        padding: 0.6rem 1.5rem!important;
+    }
+}

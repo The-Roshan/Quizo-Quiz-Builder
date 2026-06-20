@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/background/bg_0.png"), url("../images/background/bg_1.png");
+  background-repeat: no-repeat;
+  background-position: center top -10%, center right;
+  overflow: hidden;
+}
+
+.step_progress {
+  top: 280px;
+  left: 150px;
+  right: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.step {
+  width: 4.25rem;
+  height: 4.25rem;
+  color: #dedede;
+  font-size: 2.0625rem;
+  font-family: "Sen", sans-serif;
+  font-weight: 800;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 4.25rem;
+}
+.step:after {
+  content: "";
+  width: 950px;
+  height: 25px;
+  top: 50%;
+  left: 65px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  background-color: #dedede;
+}
+.step.active {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe6300), to(#ffae15));
+  background: linear-gradient(#fe6300, #ffae15);
+}
+.step.active::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe6300), to(#ffae15));
+  background: linear-gradient(#fe6300, #ffae15);
+}
+.step.finish {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe6300), to(#ffae15));
+  background: linear-gradient(#fe6300, #ffae15);
+}
+.step.finish::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe6300), to(#ffae15));
+  background: linear-gradient(#fe6300, #ffae15);
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.content_box {
+  width: 50%;
+  height: 15rem;
+  margin: 2rem auto;
+  border-radius: 0.625rem;
+  z-index: 9999;
+}
+
+.form_timer {
+  width: 8rem;
+  height: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#fe6500), to(#ffad14));
+  background: linear-gradient(to right, #fe6500, #ffad14);
+  top: -60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.form_timer img {
+  width: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+}
+.form_timer span {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+.question_title h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.form_items label {
+  width: 100%;
+  font-size: 1.435625rem;
+  font-weight: 500;
+  padding: 1rem;
+  border: 3px solid #e1e1e1;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 0.625rem;
+}
+.form_items label:before {
+  content: "";
+  top: 50%;
+  right: 16px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  color: #33b236;
+  font-size: 1.6rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: none;
+}
+.form_items label.active {
+  border: 3px solid #33b236;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.form_items label.active:before {
+  display: block;
+}
+.form_items input {
+  display: none;
+}
+
+.f_btn {
+  color: #000000;
+  font-size: 1.125rem;
+  padding: 1.5rem 2.2rem;
+  outline: none;
+  border: none;
+  font-weight: 800;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+}
+
+.prev_btn:hover {
+  color: #000000 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#ffae15), to(#fe6400));
+  background: linear-gradient(to right, #ffae15, #fe6400);
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.next_btn {
+  margin-bottom: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#fe6400), to(#ffae15));
+  background: linear-gradient(to right, #fe6400, #ffae15);
+}
+.next_btn:hover {
+  color: #000000 !important;
+  background: -webkit-gradient(linear, left top, right top, from(#ffae15), to(#fe6400));
+  background: linear-gradient(to right, #ffae15, #fe6400);
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Sen", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* css animations - end================= */
+/* transition - start ================== */
+a,
+button {
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end ====================*/
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.animate_150ms {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animate_200ms {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*	01 - media screen and (max-width: 991px)
+*	02 - media screen and (max-width: 767px)
+*	03 - media screen and (max-width: 575px)
+*	04 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 991.98px) {
+  .step_progress {
+    width: 100%;
+    margin-left: -9.4rem;
+  }
+
+  .content_box {
+    width: 70%;
+    height: 13rem;
+    margin-top: 3rem;
+  }
+
+  .left_side_img img {
+    margin-top: 6.5rem;
+  }
+
+  .question_title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .form_items label {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .f_btn {
+    width: 25%;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .logo_area {
+    text-align: center;
+  }
+
+  .step_progress {
+    display: none;
+  }
+
+  .content_box {
+    width: 65%;
+    height: 11rem;
+    margin-top: 5rem;
+  }
+
+  .question_title h1 {
+    font-size: 1.5rem;
+  }
+
+  .form_items label {
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .f_btn {
+    width: 50%;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .content_box {
+    width: 60%;
+    height: 10rem;
+    margin-top: 5rem;
+  }
+
+  .question_title h1 {
+    font-size: 1.3rem;
+  }
+
+  .form_items label {
+    width: 60%;
+    font-size: 0.7rem;
+  }
+
+  .f_btn {
+    width: 40%;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 379.98px) {
+  .content_box {
+    width: 70%;
+    margin-top: 5rem;
+  }
+
+  .question_title h1 {
+    font-size: 1rem;
+  }
+
+  .form_items label:before {
+    right: 10px;
+  }
+
+  .f_btn {
+    width: 40%;
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 319.98px) {
+  .content_box {
+    width: 70%;
+    margin-top: 5rem;
+  }
+
+  .question_title h1 {
+    font-size: 0.8rem;
+  }
+
+  .f_btn {
+    width: 40%;
+    font-size: 0.5rem;
+  }
+}

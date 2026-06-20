@@ -1,0 +1,105 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 15rem;
+    overflow: hidden;
+}
+.multisteps_form_panel{
+    display: none;
+}
+.audio_content{
+    .fas{
+        color: $black;
+        font-size: 1.704375rem;
+        padding: 2.5rem;
+    }
+    audio{
+        display: none;
+    }
+}
+.audio_title{
+    h1{
+        color: #151515;
+        font-size: 3.75rem;
+    }
+}
+.content_box{
+    width: 70%;
+    height: 20.625rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px #dbd3d3;
+}
+.question_title{
+    h6{
+        font-size: 1.875rem;
+    }
+}
+.form_items{
+    label{
+        width: 100%;
+        font-size: 1.375rem;
+        padding-left: 3.5rem;
+        cursor: pointer;
+        &:after{
+            content: "";
+            top: 50%;
+            left: 13px;
+            transform: translateY(-50%);
+            width: 1.7rem;
+            height: 1.7rem;
+            position: absolute;
+            border-radius: 100%;
+            border: 2px solid #999999;
+        }
+        &:before{
+            content: "\f111";
+            top: 50%;
+            left: 17.6px;
+            transform: translateY(-50%);
+            color: $black;
+            font-size: 1.1rem;
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            display: none;
+        }
+        &.active{
+            &:before{
+                display: block;
+            }
+        }
+        input{
+            display: none;
+        }
+    }
+}
+.f_btn{
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+}
+.prev_btn{
+    bottom: 3%;
+    left: 23%;
+    transform: translateY(-50%);
+    background-color: #214466;
+    &:hover{
+        color: $black;
+        background-color: #107eeb;
+    }
+}
+.next_btn{
+    bottom: 3%;
+    right: 37%;
+    transform: translateY(-50%);
+    background-color: #107eeb;
+    &:hover{
+        color: $black;
+        background-color: #214466;
+    }
+}

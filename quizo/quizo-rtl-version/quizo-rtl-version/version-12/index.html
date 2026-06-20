@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quizo HTML Dark Template - V.12</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style-rtl.css">
+</head>
+
+<body>
+   <div class="wrapper position-relative overflow-hidden">
+      <!-- Form logo -->
+      <div class="form_logo position-absolute">
+         <a href="index.html">
+            <img src="./assets/images/logo/logo.png" alt="image-not-found">
+         </a>
+      </div>
+      <div class="container">
+         <form class="multisteps_form" id="wizard" method="POST" action="../mail.php">
+            <!--------------- Step-1 -------------->
+            <div class="multisteps_form_panel active">
+               <div class="form_content position-relative">
+                  <div class="count_box d-none d-lg-block position-absolute">
+                     <div class="count_clock text-center">
+                        <img class="overflow-hidden" src="./assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_number ps-2 countdown_timer" data-countdown="2022/10/24"></div>
+                  </div>
+                  <div class="question_title text-white text-center overflow-hidden">
+                     <h1>Which is the Smallest Country in the World ?</h1>
+                  </div>
+                  <div class="row col-md-10 form_items radio-list position-absolute">
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_1" class="step_1 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_50ms">
+                                 Egypt
+                                 <span class="text-white text-center rounded-pill position-absolute">A</span>
+                                 <input for="opt_1" type="radio" name="stp_1_select_option" value="Egypt">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_2" class="step_1 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_100ms">
+                                 Vatican
+                                 <span class="text-white text-center rounded-pill position-absolute">B</span>
+                                 <input for="opt_2" type="radio" name="stp_1_select_option" value="Vatican">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_3" class="step_1 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_150ms active">
+                                 Singapor
+                                 <span class="text-white text-center rounded-pill position-absolute">C</span>
+                                 <input for="opt_3" type="radio" name="stp_1_select_option" value="Singapore">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_4" class="step_1 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_200ms">
+                                 France
+                                 <span class="text-white text-center rounded-pill position-absolute">D</span>
+                                 <input for="opt_4" type="radio" name="stp_1_select_option" value="France">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- form-progress-bar -->
+               <div class="form_progress_bar">
+                  <div class="progress rounded-pill">
+                     <div id="myBar" class="progress-bar rounded-pill" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
+               <!-- Form-Button -->
+               <div class="form_btn pt-5">
+                  <button type="button" class="js-btn-next next_btn text-uppercase border-0 text-white position-absolute" id="nextBtn">Next <span><i class="fas fa-arrow-left"></i></span>
+                  </button>
+               </div>
+            </div>
+            <!--------------- Step-2 -------------->
+            <div class="multisteps_form_panel">
+               <div class="form_content position-relative">
+                  <div class="count_box d-none d-lg-block position-absolute d-flex align-items-center">
+                     <div class="count_clock text-center">
+                        <img class="overflow-hidden" src="./assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_number ps-2 countdown_timer" data-countdown="2022/10/24"></div>
+                  </div>
+                  <div class="question_title text-white text-center overflow-hidden">
+                     <h1>The largest in Latin America is</h1>
+                  </div>
+                  <div class="row col-md-10 form_items check-list position-absolute">
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_5" class="step_2 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_50ms">
+                                 Caracas
+                                 <span class="text-white text-center rounded-pill position-absolute">A</span>
+                                 <input for="opt_5" type="checkbox" class="required" name="stp_2_select_option" value="Caracas">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_6" class="step_2 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_100ms">
+                                 Rio-de-Janeiro
+                                 <span class="text-white text-center rounded-pill position-absolute">B</span>
+                                 <input for="opt_6" type="checkbox" name="stp_2_select_option" value="Rio-de-Janeiro">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_7" class="step_2 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_150ms">
+                                 Mexico
+                                 <span class="text-white text-center rounded-pill position-absolute">C</span>
+                                 <input for="opt_7" type="checkbox" name="stp_2_select_option" value="Mexico">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-6 col-xl-3">
+                        <ul class="list-unstyled">
+                           <li>
+                              <label id="opt_8" class="step_2 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_200ms">
+                                 Buenos Aires
+                                 <span class="text-white text-center rounded-pill position-absolute">D</span>
+                                 <input for="opt_8" type="checkbox" name="stp_2_select_option" value="Buenos Aires">
+                              </label>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- form-progress-bar -->
+               <div class="form_progress_bar">
+                  <div class="progress rounded-pill">
+                     <div id="myBar" class="progress-bar rounded-pill" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </div>
+               <!-- Form-Button -->
+               <div class="form_btn pt-5">
+                  <button type="button" class="js-btn-prev prev_btn text-uppercase border-0 text-white position-absolute" id="prevBtn"><span><i class="fas fa-arrow-right"></i></span> Prev</button>
+                     <button type="button" class="js-btn-next next_btn text-uppercase border-0 text-white position-absolute" id="nextBtn">Next <span><i class="fas fa-arrow-left"></i></span>
+                     </button>
+                  </div>
+               </div>
+               <!--------------- Step-3 -------------->
+               <div class="multisteps_form_panel">
+                  <div class="form_content position-relative">
+                     <div class="count_box d-none d-lg-block position-absolute d-flex align-items-center">
+                        <div class="count_clock text-center">
+                           <img class="overflow-hidden" src="./assets/images/clock/clock.png" alt="image-not-found">
+                        </div>
+                        <div class="count_number ps-2 countdown_timer" data-countdown="2022/10/24"></div>
+                     </div>
+                     <div class="question_title text-white text-center overflow-hidden">
+                        <h1>The highest and lowest values of a weather ?</h1>
+                     </div>
+                     <div class="row col-md-10 form_items radio-list position-absolute">
+                        <div class="col-6 col-xl-3">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <label id="opt_9" class="step_3 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_50ms">
+                                    extremes
+                                    <span class="text-white text-center rounded-pill position-absolute">A</span>
+                                    <input for="opt_9" type="radio" class="required" name="stp_3_select_option" value="extremes">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <label id="opt_10" class="step_3 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_100ms">
+                                    average
+                                    <span class="text-white text-center rounded-pill position-absolute">B</span>
+                                    <input for="opt_10" type="radio" name="stp_3_select_option" value="average">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <label id="opt_11" class="step_3 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_150ms">
+                                    absolute
+                                    <span class="text-white text-center rounded-pill position-absolute">C</span>
+                                    <input for="opt_11" type="radio" name="stp_3_select_option" value="absolute">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <label id="opt_12" class="step_3 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_200ms">
+                                    relative
+                                    <span class="text-white text-center rounded-pill position-absolute">D</span>
+                                    <input for="opt_12" type="radio" name="stp_3_select_option" value="relative">
+                                 </label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- form-progress-bar -->
+                  <div class="form_progress_bar">
+                     <div class="progress rounded-pill">
+                        <div id="myBar" class="progress-bar rounded-pill" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                  </div>
+                  <!-- Form-Button -->
+                  <div class="form_btn pt-5">
+                     <button type="button" class="js-btn-prev prev_btn text-uppercase border-0 text-white position-absolute" id="prevBtn"><span><i class="fas fa-arrow-right"></i></span> Prev</button>
+                        <button type="button" class="js-btn-next next_btn text-uppercase border-0 text-white position-absolute" id="nextBtn">Next <span><i class="fas fa-arrow-left"></i></span>
+                        </button>
+                     </div>
+                  </div>
+                  <!--------------- Step-4 -------------->
+                  <div class="multisteps_form_panel">
+                     <div class="form_content position-relative">
+                        <div class="count_box d-none d-lg-block position-absolute d-flex align-items-center">
+                           <div class="count_clock text-center">
+                              <img class="overflow-hidden" src="./assets/images/clock/clock.png" alt="image-not-found">
+                           </div>
+                           <div class="count_number ps-2 countdown_timer" data-countdown="2022/10/24"></div>
+                        </div>
+                        <div class="question_title text-white text-center overflow-hidden">
+                           <h1>The largest gulf in the world is</h1>
+                        </div>
+                        <div class="row col-md-10 form_items check-list position-absolute">
+                           <div class="col-6 col-xl-3">
+                              <ul class="list-unstyled">
+                                 <li>
+                                    <label id="opt_13" class="step_4 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_50ms">
+                                       Carpentaria
+                                       <span class="text-white text-center rounded-pill position-absolute">A</span>
+                                       <input for="opt_13" type="checkbox" class="required" name="stp_4_select_option" value="Carpentaria">
+                                    </label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-6 col-xl-3">
+                              <ul class="list-unstyled">
+                                 <li>
+                                    <label id="opt_14" class="step_4 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_100ms">
+                                       Persian Gulf
+                                       <span class="text-white text-center rounded-pill position-absolute">B</span>
+                                       <input for="opt_14" type="checkbox" name="stp_4_select_option" value="Persian Gulf">
+                                    </label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-6 col-xl-3">
+                              <ul class="list-unstyled">
+                                 <li>
+                                    <label id="opt_15" class="step_4 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_150ms">
+                                       Gulf of Mexico
+                                       <span class="text-white text-center rounded-pill position-absolute">C</span>
+                                       <input for="opt_15" type="checkbox" name="stp_4_select_option" value="Gulf of Mexico">
+                                    </label>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-6 col-xl-3">
+                              <ul class="list-unstyled">
+                                 <li>
+                                    <label id="opt_16" class="step_4 text-uppercase bg-white position-relative d-flex justify-content-center align-items-center animate__animated animate__fadeInDown animate_200ms">
+                                       Gulf of Mannar
+                                       <span class="text-white text-center rounded-pill position-absolute">D</span>
+                                       <input for="opt_16" type="checkbox" name="stp_4_select_option" value="Gulf of Mannar">
+                                    </label>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- form-progress-bar -->
+                     <div class="form_progress_bar">
+                        <div class="progress rounded-pill">
+                           <div id="myBar" class="progress-bar rounded-pill" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                     </div>
+                     <!-- Form-Button -->
+                     <div class="form_btn pt-5">
+                        <button type="button" class="js-btn-prev prev_btn text-uppercase border-0 text-white position-absolute" id="prevBtn"><span><i class="fas fa-arrow-right"></i></span> Prev</button>
+                           <button type="button" class="next_btn text-uppercase border-0 text-white position-absolute" id="nextBtn"><a href="../thankyou/index-1.html" class="text-decoration-none">Submit</a></button>
+                        </div>
+                     </div>
+                     <!-- step-progress-bar -->
+                     <div class="step_progress_bar position-relative my-5">
+                        <div class="progress_bar steps_number d-flex justify-content-center">
+                           <div class="step d-flex flex-column align-items-center text-center position-relative active current">
+                              <span class="rounded-pill position-absolute active">1</span>
+                              <p class="pt-4 active">Question</p>
+                           </div>
+                           <div class="step d-flex flex-column align-items-center text-center position-relative">
+                              <span class="rounded-pill position-absolute">2</span>
+                              <p class="pt-4">Question</p>
+                           </div>
+                           <div class="step d-flex flex-column align-items-center text-center position-relative">
+                              <span class="rounded-pill position-absolute">3</span>
+                              <p class="pt-4">Question</p>
+                           </div>
+                           <div class="step d-flex flex-column align-items-center text-center position-relative">
+                              <span class="rounded-pill position-absolute">4</span>
+                              <p class="pt-4">Question</p>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <!-- jQuery-js include -->
+            <script src="./assets/js/jquery-3.6.0.min.js"></script>
+            <!-- Countdown-js include -->
+            <script src="./assets/js/countdown.js"></script>
+            <!-- Bootstrap-js include -->
+            <script src="./assets/js/bootstrap.min.js"></script>
+            <!-- jQuery-validate-js include -->
+            <script src="./assets/js/jquery.validate.min.js"></script>
+            <!-- Custom-js include -->
+            <script src="./assets/js/script.js"></script>
+         </body>
+         </html>

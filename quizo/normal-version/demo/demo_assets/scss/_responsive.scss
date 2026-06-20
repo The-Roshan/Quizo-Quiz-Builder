@@ -1,0 +1,303 @@
+/* ==================================================================================================== */
+/* 
+*	Project Name 	:  Quizo
+*	File 			:  Responsive CSS Base
+*	Version 		:  1.0.0
+*	Author 			:  jthemes (https://themeforest.net/user/jthemes)
+*	css code for responsive layout To make Responsive
+/* ==================================================================================================== */
+
+
+
+/*  ====================================================================================================
+1 - media screen and (max-width: 1460px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 1660px) {
+	
+	.banner_image {
+		max-width: 80%;
+	}
+	
+}
+
+@media screen and (max-width: 1460px) {
+	
+	.banner_section {
+		min-height: 100vh;
+		padding: 100px 0px;
+	}
+	.banner_content .brand_logo {
+		margin-bottom: 50px;
+		.brand_link {
+			max-width: 350px;
+		}
+	}
+	.banner_content h1 {
+		font-size: 60px;
+		margin-bottom: 30px;
+	}
+	.custom_btn {
+		font-size: 14px;
+		padding: 23px 50px;
+	}
+	.banner_content .btn_wrap {
+		margin-bottom: 80px;
+	}
+	.banner_content .info_list li {
+		font-size: 22px;
+		padding-left: 18px;
+	}
+	.banner_content .info_list li:before {
+		top: 7px;
+		width: 10px;
+		height: 10px;
+	}
+	.banner_image {
+		max-width: 75%;
+	}
+	.homepages_section {
+		padding: 170px 0px;
+	}
+	
+	.carousel_nav button {
+		width: 60px;
+		height: 60px;
+		font-size: 15px;
+	}
+	
+	.product_layout_carousel .carousel_nav {
+		button {
+			&:nth-child(1) {
+				left: 0px;
+			}
+			&:nth-child(2) {
+				right: 0px;
+			}
+		}
+	}
+	
+	.sec_ptb_150 {
+		padding: 100px 0px;
+	}
+	
+}
+
+/* ====================================================================================================
+1 - media screen and (max-width: 1460px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+4 - media screen and (max-width: 991px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 1024px) {
+	
+	.details_pages_section .section_title p {
+		font-size: 16px;
+	}
+	.details_pages_section .section_title .title_text {
+		margin-bottom: 35px;
+	}
+	.details_pages_section .carousel_nav button {
+		width: 55px;
+		height: 55px;
+	}
+	
+	.product_image {
+		height: 340px;
+	}
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+	.banner_image {
+		max-width: 50%;
+	}
+	.banner_section {
+		min-height: auto;
+		padding: 80px 0px;
+	}
+	.banner_section {
+		background-size: 55%;
+	}
+	.banner_content .brand_logo {
+		margin-bottom: 30px;
+		.brand_link {
+			max-width: 250px;
+		}
+	}
+	.banner_content h1 {
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
+	.custom_btn {
+		font-size: 14px;
+		padding: 20px 40px;
+	}
+	.banner_content .btn_wrap {
+		margin-bottom: 40px;
+	}
+	.banner_content .info_list li:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	.banner_content .info_list li:before {
+		top: 7px;
+		width: 6px;
+		height: 6px;
+	}
+	.banner_content .info_list li {
+		font-size: 18px;
+		padding-left: 14px;
+	}
+	
+	.section_title .big_text {
+		font-size: 90px;
+	}
+	.section_title .title_text {
+		font-size: 38px;
+	}
+	.section_title {
+		margin-bottom: 35px;
+	}
+	.filters-button-group li:not(:last-child) {
+		margin-right: 15px;
+		padding-right: 15px;
+	}
+	.homepages_grid_wrap .element-item {
+		width: 33.333%;
+	}
+	.homepage_item .item_title {
+		padding: 20px;
+		font-size: 16px;
+	}
+	
+	.carousel_nav button {
+		width: 45px;
+		height: 45px;
+		font-size: 14px;
+	}
+	
+	.homepage_layout_item,
+	.product_details_layout {
+		margin: auto;
+		max-width: 670px;
+	}
+	
+	.footer_section {
+		.footer_widget_area {
+			padding: 60px 0px;
+			padding-top: 100px;
+		}
+		.footer_widget {
+			padding: 20px 0px;
+		}
+	}
+	
+}
+
+/* ====================================================================================================
+4 - media screen and (max-width: 991px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+5 - media screen and (max-width: 767px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 767px) {
+	
+	.homepages_section {
+		padding: 100px 0px;
+	}
+	.homepages_grid_wrap .element-item {
+		width: 50%;
+	}
+	
+	.homepage_layout_item,
+	.product_details_layout {
+		max-width: 470px;
+	}
+	
+	.feature_item {
+		margin: auto;
+		margin-top: 40px;
+		max-width: 470px;
+	}
+	.feature_item .item_title {
+		font-size: 15px;
+		margin-left: 15px;
+		margin-top: -20px;
+		padding: 15px 20px;
+	}
+	
+	.section_title .big_text {
+		font-size: 72px;
+	}
+	.section_title .title_text {
+		font-size: 30px;
+	}
+	
+	.header_item .header_serial {
+		font-size: 42px;
+		margin-right: 20px;
+	}
+	
+	.details_pages_section .bg_overlay {
+		width: 100%;
+	}
+	
+	.details_pages_carousel {
+		margin-bottom: 40px;
+	}
+	
+}
+
+/* ====================================================================================================
+5 - media screen and (max-width: 767px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+8 - media screen and (max-width: 414px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 575px) {
+	
+	.product_image {
+		max-width: 370px;
+		margin: 30px auto 0px;
+	}
+	
+}
+
+@media screen and (max-width: 414px) {
+	
+	.banner_content .brand_logo .brand_link {
+		max-width: 200px;
+	}
+	.banner_content h1 {
+		font-size: 36px;
+	}
+	.homepages_grid_wrap .element-item {
+		width: 100%;
+	}
+	
+}
+
+/* ====================================================================================================
+8 - media screen and (max-width: 414px) - end
+==================================================================================================== */
+
+
+/* ====================================================================================================
+9 - media screen and (max-width: 320px) - start
+==================================================================================================== */
+
+@media screen and (max-width: 320px) {}
+
+/* ====================================================================================================
+9 - media screen and (max-width: 320px) - end
+==================================================================================================== */

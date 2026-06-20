@@ -1,0 +1,121 @@
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+// 01 - media screen and (max-width: 1400px)
+@media screen and(max-width: 1399.98px){
+    .question_title{
+        h1{
+            font-size: 2.8rem;
+        }
+    }
+    .form_items{
+        label{
+            font-size: 1.2rem;
+        }
+    }
+}
+// 02 - media screen and (max-width: 1200px)
+@media screen and(max-width: 1199.98px){
+    .form_items{
+        label{
+            font-size: 0.8rem;
+            padding-left: 5rem;
+            span{
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}
+// 03 - media screen and (max-width: 992px)
+@media screen and(max-width: 991.98px){
+    .form_content{
+        text-align: center;
+    }
+    .f_btn{
+        width: 5rem;
+        height: 3rem;
+        border-radius: 0%;
+        background: linear-gradient(to right, #f95634, #fba220);
+    }
+}
+// 04 - media screen and (max-width: 768px)
+@media screen and(max-width: 767.98px){
+    .video_player{
+        padding-top: 4rem;
+    }
+    .modal-body{
+        padding: 1.5rem;
+    }
+    .form_content{
+        padding: 0 3rem;
+    }
+    .question_number{
+        span{
+            font-size: 1rem;
+        }
+    }
+    .question_title{
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    .form_items{
+        padding: 7rem 3rem;
+        text-align: center;
+        label{
+            width: 80%;
+            margin-top: 2rem;
+        }
+    }
+    .btn-close{
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: none!important;
+    }
+}
+// 05 - media screen and (max-width: 576px)
+@media screen and(max-width: 575.98px){
+    .logo_area{
+       text-align: center;
+    }
+   .modal-content{
+       width: 80%;
+       margin: 0 auto;
+   }
+}
+// 06 - media screen and (max-width: 480px)
+@media screen and(max-width: 479.98px){
+    .video-btn{
+        .fas{
+            width: 5rem;
+            height: 5rem;
+            line-height: 4rem;
+            font-size: 1.875rem;
+        }
+    }
+    .question_number{
+        span{
+            font-size: 0.8rem;
+        }
+    }
+    .question_title{
+        h1{
+            font-size: 1rem;
+            padding: 0 2rem;
+        }
+    }
+    .form_items{
+        label{
+            span{
+                padding: 0.7rem 1.2rem;
+            }
+        }
+    }
+}

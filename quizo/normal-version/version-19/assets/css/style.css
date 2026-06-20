@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/background/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 15rem;
+  overflow: hidden;
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.audio_content .fas {
+  color: #000000;
+  font-size: 1.704375rem;
+  padding: 2.5rem;
+}
+.audio_content audio {
+  display: none;
+}
+
+.audio_title h1 {
+  color: #151515;
+  font-size: 3.75rem;
+}
+
+.content_box {
+  width: 70%;
+  height: 20.625rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 2px #dbd3d3;
+          box-shadow: 0px 0px 20px 2px #dbd3d3;
+}
+
+.question_title h6 {
+  font-size: 1.875rem;
+}
+
+.form_items label {
+  width: 100%;
+  font-size: 1.375rem;
+  padding-left: 3.5rem;
+  cursor: pointer;
+}
+.form_items label:after {
+  content: "";
+  top: 50%;
+  left: 13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid #999999;
+}
+.form_items label:before {
+  content: "";
+  top: 50%;
+  left: 17.6px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  display: none;
+}
+.form_items label.active:before {
+  display: block;
+}
+.form_items label input {
+  display: none;
+}
+
+.f_btn {
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+}
+
+.prev_btn {
+  bottom: 3%;
+  left: 23%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #214466;
+}
+.prev_btn:hover {
+  color: #000000;
+  background-color: #107eeb;
+}
+
+.next_btn {
+  bottom: 3%;
+  right: 37%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #107eeb;
+}
+.next_btn:hover {
+  color: #000000;
+  background-color: #214466;
+}
+
+body {
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Russo One", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition - start
+================================================== */
+a,
+button {
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end
+================================================== */
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*	07 - media screen and (max-width: 360px)
+*	08 - media screen and (max-width: 320px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1399.98px) {
+  .audio_title h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .audio_title h1 {
+    font-size: 2rem;
+  }
+
+  .question_title h6 {
+    font-size: 1.4rem;
+  }
+
+  .form_items label {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .logo_area {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+
+  .audio_content .fas {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+
+  .audio_title h1 {
+    font-size: 1.5rem;
+  }
+
+  .content_box {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .question_title h6 {
+    font-size: 1rem;
+  }
+
+  .form_items label {
+    font-size: 0.8rem;
+  }
+
+  .f_btn {
+    font-size: 0.7rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .prev_btn {
+    bottom: 8%;
+    left: 28%;
+  }
+
+  .next_btn {
+    bottom: 8%;
+    right: 28%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .logo_area img {
+    width: 8rem;
+  }
+
+  .audio_content .fas {
+    padding: 1rem;
+  }
+
+  .audio_title h1 {
+    font-size: 1.2rem;
+  }
+
+  .question_title {
+    padding-left: 2rem !important;
+  }
+
+  .form_items {
+    padding-left: 2rem !important;
+  }
+
+  .f_btn {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .prev_btn {
+    left: 22%;
+  }
+
+  .next_btn {
+    right: 22%;
+  }
+}
+@media screen and (max-width: 319.98px) {
+  .logo_area img {
+    width: 5rem;
+  }
+
+  .audio_title h1 {
+    font-size: 0.8rem;
+  }
+
+  .question_title h6 {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,330 @@
+/* ====== Table of content Start =====*/
+/*
+Project Name: Quizo
+File        : CSS Base
+Version     : 1.0.0
+Author      : jthemes (https://themeforest.net/user/jthemes)
+*/
+/* ====== Table of content End =====*/
+/* Default transition start*/
+/*Default transition end*/
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/background/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.video_player {
+  padding-top: 8rem;
+  overflow: hidden;
+}
+
+.video-btn span {
+  display: inline-block;
+  border: 8px solid #ededed61;
+}
+.video-btn .fas {
+  width: 6rem;
+  height: 6rem;
+  line-height: 5rem;
+  font-size: 1.875rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f95934), to(#fba220));
+  background: linear-gradient(to right, #f95934, #fba220);
+  border: 8px solid #d0d6d9;
+}
+
+.modal-dialog {
+  width: 100%;
+  margin: 3rem auto;
+}
+
+.btn-close {
+  top: 0;
+  right: -30px;
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.form_content {
+  padding-top: 5rem;
+}
+
+.question_number span {
+  font-size: 1.3125rem;
+}
+
+.question_title h1 {
+  font-size: 3.4375rem;
+  letter-spacing: 2px;
+}
+
+.form_items {
+  padding: 7rem 0;
+}
+.form_items label {
+  width: 100%;
+  height: auto;
+  color: #212121;
+  font-size: 1.3125rem;
+  padding: 0.5rem 2rem;
+  padding-left: 7rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form_items label:not(:last-child) {
+  margin-right: 3rem;
+}
+.form_items label span {
+  top: 50%;
+  left: -5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #31395c;
+  border-radius: 10px;
+  padding: 1rem 2.5rem;
+  background-color: #e3dbc8;
+}
+.form_items label.active {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#f95634), to(#fba220));
+  background: linear-gradient(to right, #f95634, #fba220);
+}
+.form_items label.active span {
+  background-color: #212121;
+}
+.form_items label.active span .fas {
+  color: #ffffff;
+}
+.form_items label input {
+  display: none;
+}
+
+.f_btn {
+  width: 8rem;
+  height: 8rem;
+  background-color: #31395c;
+  border-radius: 100%;
+}
+.f_btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f95634), to(#fba220));
+  background: linear-gradient(to right, #f95634, #fba220);
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.prev_btn {
+  top: 50%;
+  left: -2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.next_btn {
+  top: 50%;
+  right: -2%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.progress {
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #31395c;
+}
+.progress .far {
+  top: 15px;
+  right: 16px;
+  color: #7d86ac;
+  font-size: 1.5625rem;
+  z-index: 1;
+}
+
+.progress-bar {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f9413a), to(#fbb81a));
+  background: linear-gradient(to right, #f9413a, #fbb81a);
+  z-index: 3;
+}
+
+body {
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Russo One", sans-serif;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* transition - start
+================================================== */
+a,
+button {
+  -webkit-transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* transition - end
+================================================== */
+.animate_25ms {
+  -webkit-animation-delay: 25ms;
+          animation-delay: 25ms;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1400px)
+*   02 - media screen and (max-width: 1200px)
+*	03 - media screen and (max-width: 992px)
+*	04 - media screen and (max-width: 768px)
+*	05 - media screen and (max-width: 576px)
+*	06 - media screen and (max-width: 480px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1399.98px) {
+  .question_title h1 {
+    font-size: 2.8rem;
+  }
+
+  .form_items label {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .form_items label {
+    font-size: 0.8rem;
+    padding-left: 5rem;
+  }
+  .form_items label span {
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .form_content {
+    text-align: center;
+  }
+
+  .f_btn {
+    width: 5rem;
+    height: 3rem;
+    border-radius: 0%;
+    background: -webkit-gradient(linear, left top, right top, from(#f95634), to(#fba220));
+    background: linear-gradient(to right, #f95634, #fba220);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .video_player {
+    padding-top: 4rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  .form_content {
+    padding: 0 3rem;
+  }
+
+  .question_number span {
+    font-size: 1rem;
+  }
+
+  .question_title h1 {
+    font-size: 1.5rem;
+  }
+
+  .form_items {
+    padding: 7rem 3rem;
+    text-align: center;
+  }
+  .form_items label {
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+  .btn-close {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: none !important;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .logo_area {
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .video-btn .fas {
+    width: 5rem;
+    height: 5rem;
+    line-height: 4rem;
+    font-size: 1.875rem;
+  }
+
+  .question_number span {
+    font-size: 0.8rem;
+  }
+
+  .question_title h1 {
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+
+  .form_items label span {
+    padding: 0.7rem 1.2rem;
+  }
+}

@@ -1,0 +1,319 @@
+// ================ Multi-step css =================
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  // background-image:linear-gradient(to right, rgba(33, 147, 176, 0.7), rgba(18, 124, 148, 0.7)), url('../images/bg-img/bg-1.png');
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  padding-top: 1.25rem;
+  padding-bottom: 5rem;
+  .container-fluid {
+    max-width: 1600px;
+    margin: auto;
+    position: relative;
+  }
+}
+.count_box{
+  width: 19rem;
+  height: 6.0625rem;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+.count_clock{
+  img{
+    width: 3.125rem;
+  }
+}
+.count_title{
+  h4{
+    color: $defaultColor;
+    font-size: 1.375rem;
+    margin-bottom: -0.4rem;
+  }
+  span{
+    color: $defaultColor;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+}
+.count_number{
+  width: 7rem;
+  height: 5rem;
+  h3{
+    color: $defaultColor;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-top: 0.9rem;
+    margin-bottom: -0.3rem;
+  }
+  span{
+    color: #595959;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
+.form_header_content{
+  padding-top: 0.625rem;
+  h2 {
+    font-size: 2.8125rem;
+    background: -webkit-linear-gradient(#36d0dc, #5a87e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+  }
+  span{
+    color: $defaultColor;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+// -------- Hidden Panel --------
+.multisteps_form_panel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+  height: 0;
+}
+.multisteps_form_panel.active {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+}
+
+.multisteps_form_panel[data-animation=scaleOut] {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.multisteps_form_panel[data-animation=scaleOut].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.multisteps_form_panel[data-animation=slideHorz] {
+  left: -50px;
+}
+.multisteps_form_panel[data-animation=slideHorz].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  -o-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  left: 0;
+}
+.multisteps_form_panel[data-animation=slideVert] {
+  top: 30px;
+}
+.multisteps_form_panel[data-animation=slideVert].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  top: 0;
+}
+.multisteps_form_panel[data-animation=fadeIn].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.multisteps_form_panel[data-animation=scaleIn] {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.multisteps_form_panel[data-animation=scaleIn].active {
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.form_content{
+  width: 70%;
+  min-height: 43.75rem;
+  background-image: url('../images/bg-img/bg-2.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 0.5rem;
+  margin: auto;
+  display: none;
+}
+.multisteps_form_panel.active .form_content{
+  display: block;
+}
+.question_number{
+  color: $defaultColor;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-right: 5.176rem;
+}
+.progress{
+  width: 85%;
+  margin: 2.1875rem 0 1.25rem 3.75rem;
+  .progress-bar{
+    background: linear-gradient(to right, #36d1dc, #5b87e5);
+  }
+}
+h1{
+  color: $defaultColor;
+  font-size: 2.4375rem;
+  padding: 3.5rem 0rem;
+}
+.form_items{
+  padding-left: 1.25rem;
+  padding-bottom: 4rem;
+  label{
+    width: 70%;
+    color: $defaultColor;
+    font-size: 1.3125rem;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 4rem!important;
+    background-color: #fbfbfb;
+    margin-top: 1.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    &.active{
+      background-color: #e9e9e9;
+    }
+    &:after{
+      content: "";
+      width: 1.875rem;
+      height: 1.875rem;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      position: absolute;
+      border-radius: 100%;
+      border: 2px solid #e2e2e2;
+      background: linear-gradient(#38cedc, #5784dd);
+    }
+    &:before{
+      content: "\f00c";
+      top: 50%;
+      left: 21px;
+      transform: translateY(-50%);
+      position: absolute;
+      color: $white;
+      font-size: 1.5625rem;
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+      display: none;
+      z-index: 1;
+    }
+    &.active{
+      &:before{
+        display: block;
+      }
+    }
+  }
+  input{
+    opacity: 0;
+    // display: none; // if use this validation not work
+  }
+  .error {
+    width: 350px;
+    height: 41px;
+    color: red;
+    font-size: 1.5rem;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: transparent;
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0px;
+    &::after{
+      display: none;
+    }
+  }
+}
+.form_btn{
+  a{
+    color: $white!important;
+    &:hover{
+      color: $black!important;
+    }
+  }
+  .f_btn{
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 0.9375rem 1.5625rem;
+    outline: none;
+    border: none;
+    margin-right: 0.625rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .prev{
+    color: $white;
+    background-color: $black;
+    &:hover{
+      color: $black!important;
+      background-color: $white;
+    }
+  }
+  .next{
+    color: $white;
+    background: linear-gradient(to right,#36d0dc, #5b87e5);
+    &:hover{
+      color: $black!important;
+      background: linear-gradient(to right,#5b87e5, #36d0dc);
+    }
+  }
+}

@@ -1,0 +1,99 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 120vh;
+    background-image: url('../images/background/bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+.multisteps_form_panel{
+    display: none;
+}
+.count_clock{
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+.count_clock{
+    span{
+        width: 120px;
+        font-size: 2.5rem;
+        background: -webkit-linear-gradient(#4285ec, #0cb9fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.question_title{
+    h1{
+        color: #151515;
+        font-size: 3.125rem;
+    }
+}
+.form_items{
+    margin-bottom: 10rem;
+    label{
+        width: 100%;
+        cursor: pointer;
+        &:before{
+            content: '\f111';
+            top: 15%;
+            left: 29px;
+            transform: translateY(-50%);
+            position: absolute;
+            color: #107eeb;
+            font-size: 1.5rem;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            display: none;
+        }
+        &:after{
+            content: '';
+            top: 15%;
+            left: 25px;
+            transform: translateY(-50%);
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border: 3px solid #e0e0e0;
+            border-radius: 100px;
+            font-weight: 900;
+        }
+        &.active{
+            &:before{
+                display: block;
+            }
+        }
+        input{
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+.f_btn{
+    font-size: 1rem;
+    padding: 1.3rem 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.prev_btn{
+    bottom: 30px;
+    left: 27%;
+    background-color: #214466;
+    &:hover{
+        background-color: #107eeb;
+    }
+}
+.next_btn{
+    bottom: 30px;
+    right: 27%;
+    background-color: #107eeb;
+    &:hover{
+        background-color: #214466;
+    }
+}

@@ -1,0 +1,303 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background/bg_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+.form_logo{
+    top: 87px;
+    left: 170px;
+    z-index: 2;
+}
+.steps_area {
+    max-width: 30%;
+    position: relative;
+}
+.image_holder{
+    img{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: 25% 50%;
+    }
+}
+.step_items {
+    top: 0%;
+    right: -40px;
+    height: 100%;
+    align-items: center;
+    display: grid;
+    padding-top: 55%;
+    padding-bottom: 55%;
+    transform: translateX(-50%);
+    z-index: 9;
+    &:before{
+        content: '';
+        width: 3px;
+        height: 310px;
+        top: 0%;
+        right: 18px;
+        position: absolute;
+        background-color: #ff950e;
+        z-index: 5;
+    }
+}
+.step {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #e9e9e9;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+    z-index: 10;
+    &:after {
+        content: '';
+        width: 55px;
+        height: 55px;
+        top: 50%;
+        left: -8px;
+        transform: translateY(-50%);
+        position: absolute;
+        border-radius: 100%;
+        border: 10px solid #e9e9e9;
+    }
+    &:before{
+        content: "";
+        width: 3px;
+        height: 90px;
+        top: 230%;
+        left: 19px;
+        transform: translateY(-50%);
+        position: absolute;
+        background-color: $white;
+    }
+    &:last-child{
+        &:before{
+            display: none;
+        }
+    }
+    &.active {
+        &{
+            color: #ff950e;
+            &:after{
+                border-color: #ff950e;
+            }
+            &:before{
+                background-color: #ff950e;
+            }
+        }
+    }
+    &.finish{
+        &{
+            color: #ff950e;
+            &:after{
+                border-color: #ff950e;
+            }
+            &:before{
+                background-color: #ff950e;
+            }
+        }
+    }
+}
+.count_box{
+    width: 23rem;
+    height: 5.625rem;
+    padding-right: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background: linear-gradient(to right, #fe6300, #ffaf15);
+    overflow: hidden;
+    bottom: 60px;
+    left: 50px;
+    position: absolute;
+}
+.count_clock{
+    img{
+        width: 2.8125rem;
+    }
+}
+.count_title{
+    h4{
+        font-size: 1.146875rem;
+        font-weight: 800;
+        margin-bottom: -0.4rem;
+    }
+    span{
+        font-size: 1.146875rem;
+        font-weight: 800;
+    }
+}
+.count_number{
+    width: 14rem;
+    height: 4.5rem;
+}
+.count_number div {
+    min-width: 60px;
+    text-align: center;
+}
+.count_hours,
+.count_min,
+.count_sec{
+    h3{
+        color: #000a38;
+        font-size: 1.75rem;
+        font-weight: 800;
+        margin-bottom: -0.6rem;
+    }
+    span{
+        color: #000a38;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    &:after{
+        content: "";
+        width: 0.1875rem;
+        height: 2.5rem;
+        top: 50%;
+        right: 34%;
+        transform: translateY(-50%);
+        position: absolute;
+        background-color: #e1e1e1;
+    }
+    &:before{
+        content: "";
+        width: 0.1875rem;
+        height: 2.5rem;
+        top: 50%;
+        left: 34%;
+        transform: translateY(-50%);
+        position: absolute;
+        background-color: #e1e1e1;
+    }
+}
+.multisteps_form_panel{
+    display: none;
+}
+.step_content{
+    h4{
+        color: #000a38;
+        font-size: 2.22rem;
+        font-weight: 800;
+    }
+    span{
+        color: #e8e8e8;
+        font-size: 1.426875rem;
+        font-weight: 700;
+    }
+}
+.step_progress_bar{
+    width: 100%;
+}
+.progress{
+    background-color: #e9e9e9;
+}
+.progress-bar{
+    background: linear-gradient(to right, #fe6300, #ffaf15);
+}
+.question_title{
+    h1{
+        font-size: 3.125rem;
+        font-weight: 600;
+    }
+}
+.step_1, .step_2, .step_3, .step_4{
+    img{
+        filter: grayscale(100%);
+        opacity: 0.3;
+    }
+    &.active{
+        img{
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+}
+label{
+    padding: 1rem;
+    border: 3px solid #efefef;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: "\f111";
+        top: 13%;
+        right: 20px;
+        transform: translateY(-50%);
+        position: absolute;
+        color: #ffb901;
+        font-size: 1.3125rem;
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        display: none;
+    }
+    &:after{
+        content: "";
+        width: 1.8rem;
+        height: 1.8rem;
+        top: 12.7%;
+        right: 16px;
+        transform: translateY(-50%);
+        position: absolute;
+        border-radius: 100%;
+        border: 2px solid #e2e2e2;
+    }
+    &.active{
+        border: 3px solid #ff980f;
+        transition: all 0.3s ease-in-out;
+        &:before{
+            display: block;
+        }
+    }
+    input{
+        display: none;
+    }
+}
+.step_box_icon{
+    img{
+        padding-top: 2rem;
+    }
+}
+.step_box_text{
+    color: #000a38;
+    font-size: 1.5625rem;
+    font-weight: 800;
+}
+.step_box_desc{
+    color: #a9a9a9;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+.form_btn{
+    padding-bottom: 5rem;
+}
+.prev_btn{
+    color: #7c7878;
+    font-size: 1.125rem;
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 0.525rem;
+    border: 1px solid #e1e1e1;
+    &:hover{
+        color: $white;
+        background: linear-gradient(to right, #fe6300, #ffaf15);
+    }
+}
+.next_btn{
+    font-size: 1.125rem;
+    padding: 1rem;
+    font-weight: 800;
+    border-radius: 0.525rem;
+    border: 1px solid #e1e1e1;
+    background: linear-gradient(to right, #fe6300, #ffaf15);
+    &:hover{
+        color: $black!important;
+        background: linear-gradient(to right,#ffaf15, #fe6300);
+    }
+}

@@ -1,0 +1,46 @@
+body{
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Russo One', sans-serif;
+}
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* transition - start
+================================================== */
+a,
+button {
+  transition: $default_transition;
+}
+/* transition - end
+================================================== */
+// Custom animation delay ==============
+.animate_25ms{
+  animation-delay: 25ms;
+}
+.animate_50ms{
+  animation-delay: 50ms;
+}
+.animate_100ms{
+  animation-delay: 100ms;
+}
+// Bootstrap setting start
+@media (min-width: 1500px){
+  .container{
+    max-width: 1510px;
+  }
+}

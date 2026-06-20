@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quizo HTML Template - V.7</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;800&family=Russo+One&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+   <div class="wrapper position-relative overflow-hidden py-5">
+      <!-- Top content -->
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="logo_area mx-2">
+                  <img src="./assets/images/logo/logo.png" alt="image-not-found">
+               </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block">
+               <div class="count_box d-flex flex-row align-items-center pe-2 mt-2 float-end rounded-pill">
+                  <div class="count_clock ps-2">
+                     <img  src="./assets/images/clock/clock.png" alt="image-not-found">
+                  </div>
+                  <div class="count_title px-1">
+                     <h4 class="text-white">Quiz</h4>
+                     <span class="text-white">Time start</span>
+                  </div>
+                  <div class="count_number p-3 d-flex justify-content-around align-items-center position-relative overflow-hidden rounded-pill countdown_timer" data-countdown="2022/10/24">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-md-6">
+               <form class="multisteps_form bg-white position-relative overflow-hidden" id="wizard" method="POST" action="../thankyou/index-1.html">
+                  <!------------------------- Step-1 ----------------------------->
+                  <div class="multisteps_form_panel step">
+                     <div class="question_number ps-5 pt-3">
+                        <span>01</span>
+                     </div>
+                     <div class="question_title">
+                        <h1 class="text-center px-5 py-5 animate__animated animate__fadeInRight animate_25ms">What is not one Principle Taught in yoga?</h1>
+                     </div>
+                     <div class="row form_items">
+                        <div class="col-md-6">
+                           <div class="form_items_content bg-white text-center position-relative active step_1 animate__animated animate__fadeInRight animate_50ms">
+                              <label for="opt_1" class="d-block">
+                                 <span class="form_items_icon">
+                                    <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                 </span>
+                                 <span class="form_items_text pt-2 d-block">
+                                    Spirit
+                                 </span>
+                                 <span class="service-check-option">
+                                    <span><input id="opt_1" type="radio" name="stp_1_select_option" value="Spirit"></span>
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form_items_content bg-white text-center position-relative step_1 animate__animated animate__fadeInRight animate_100ms">
+                              <label for="opt_2" class="d-block">
+                                 <span class="form_items_icon">
+                                    <img src="assets/images/item-img/item_2.png" alt="image-not-found">
+                                 </span>
+                                 <span class="form_items_text pt-2 d-block">
+                                    Union
+                                 </span>
+                                 <span class="service-check-option">
+                                    <span><input id="opt_2" type="radio" name="stp_1_select_option" value="Union"></span>
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form_items_content bg-white text-center position-relative step_1 animate__animated animate__fadeInRight animate_150ms">
+                              <label for="opt_3" class="d-block">
+                                 <span class="form_items_icon">
+                                    <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                 </span>
+                                 <span class="form_items_text pt-2 d-block">
+                                    Posture
+                                 </span>
+                                 <span class="service-check-option">
+                                    <span><input id="opt_3" type="radio" name="stp_1_select_option" value="Posture"></span>
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form_items_content bg-white text-center position-relative step_1 animate__animated animate__fadeInRight animate_200ms">
+                              <label for="opt_4" class="d-block">
+                                 <span class="form_items_icon">
+                                    <img src="assets/images/item-img/item_4.png" alt="image-not-found">
+                                 </span>
+                                 <span class="form_items_text pt-2 d-block">
+                                    Proper Exercise
+                                 </span>
+                                 <span class="service-check-option">
+                                    <span><input id="opt_4" type="radio" name="stp_1_select_option" value="Proper Exercise"></span>
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Progress bar -->
+                     <div class="row justify-content-center">
+                        <div class="col-10">
+                           <div class="step_progress">
+                              <span>1 of 5 Question</span>
+                              <div class="step_progress_bar">
+                                 <div class="progress rounded-pill">
+                                    <div class="progress-bar" style="width:20%"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!------------------------- Step-2 ----------------------------->
+                  <div class="multisteps_form_panel step">
+                     <div class="question_number ps-5 pt-3">
+                        <span>02</span>
+                     </div>
+                     <div class="question_title">
+                        <h1 class="text-center px-5 py-5 animate__animated animate__fadeInRight animate_25ms">The sanskrit name for
+                           Mountain Pose is</h1>
+                        </div>
+                        <div class="row form_items">
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_2 animate__animated animate__fadeInRight animate_50ms">
+                                 <label for="opt_5" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Dandasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_5" type="radio" name="stp_2_select_option" value="Dandasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_2 animate__animated animate__fadeInRight animate_100ms">
+                                 <label for="opt_6" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_2.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Tadasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_6" type="radio" name="stp_2_select_option" value="Tadasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_2 animate__animated animate__fadeInRight animate_150ms">
+                                 <label for="opt_7" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Utkatasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_7" type="radio" name="stp_2_select_option" value="Utkatasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_2 animate__animated animate__fadeInRight animate_200ms">
+                                 <label for="opt_8" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_4.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Uttanasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_8" type="radio" name="stp_2_select_option" value="Uttanasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="row justify-content-center">
+                           <div class="col-10">
+                              <div class="step_progress">
+                                 <span>2 of 5 Question</span>
+                                 <div class="step_progress_bar">
+                                    <div class="progress rounded-pill">
+                                       <div class="progress-bar" style="width:40%"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!------------------------- Step-3 ----------------------------->
+                     <div class="multisteps_form_panel step">
+                        <div class="question_number ps-5 pt-3">
+                           <span>03</span>
+                        </div>
+                        <div class="question_title">
+                           <h1 class="text-center px-5 py-5 animate__animated animate__fadeInRight animate_25ms">Hero's pose</h1>
+                        </div>
+                        <div class="row form_items">
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_3 animate__animated animate__fadeInRight animate_50ms">
+                                 <label for="opt_9" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Navasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_9" type="radio" name="stp_3_select_option" value="Navasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_3 animate__animated animate__fadeInRight animate_100ms">
+                                 <label for="opt_10" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_2.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Sukhasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_10" type="radio" name="stp_3_select_option" value="Sukhasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_3 animate__animated animate__fadeInRight animate_150ms">
+                                 <label for="opt_11" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Virasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_11" type="radio" name="stp_3_select_option" value="Virasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_3 animate__animated animate__fadeInRight animate_200ms">
+                                 <label for="opt_12" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_4.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Padmasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_12" type="radio" name="stp_3_select_option" value="Padmasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="row justify-content-center">
+                           <div class="col-10">
+                              <div class="step_progress">
+                                 <span>3 of 5 Question</span>
+                                 <div class="step_progress_bar">
+                                    <div class="progress rounded-pill">
+                                       <div class="progress-bar" style="width:60%"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!------------------------- Step-4 ----------------------------->
+                     <div class="multisteps_form_panel step">
+                        <div class="question_number ps-5 pt-3">
+                           <span>04</span>
+                        </div>
+                        <div class="question_title">
+                           <h1 class="text-center px-5 py-5 animate__animated animate__fadeInRight animate_25ms">Downward Facing Dog</h1>
+                        </div>
+                        <div class="row form_items">
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_4 animate__animated animate__fadeInRight animate_50ms">
+                                 <label for="opt_13" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Adho Mukha Vrksasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_13" type="radio" name="stp_4_select_option" value="Adho Mukha Vrksasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_4 animate__animated animate__fadeInRight animate_100ms">
+                                 <label for="opt_14" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_2.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Gomukhasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_14" type="radio" name="stp_4_select_option" value="Gomukhasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_4 animate__animated animate__fadeInRight animate_150ms">
+                                 <label for="opt_15" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Adho Mukha Svanasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_15" type="radio" name="stp_4_select_option" value="Adho Mukha Svanasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_4 animate__animated animate__fadeInRight animate_200ms">
+                                 <label for="opt_16" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_4.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Sukhasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_16" type="radio" name="stp_4_select_option" value="Sukhasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="row justify-content-center">
+                           <div class="col-10">
+                              <div class="step_progress">
+                                 <span>4 of 5 Question</span>
+                                 <div class="step_progress_bar">
+                                    <div class="progress rounded-pill">
+                                       <div class="progress-bar" style="width:80%"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!------------------------- Step-5 ----------------------------->
+                     <div class="multisteps_form_panel step">
+                        <div class="question_number ps-5 pt-3">
+                           <span>05</span>
+                        </div>
+                        <div class="question_title">
+                           <h1 class="text-center px-5 py-5 animate__animated animate__fadeInRight animate_25ms">Revolved Triangle</h1>
+                        </div>
+                        <div class="row form_items">
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_5 animate__animated animate__fadeInRight animate_50ms">
+                                 <label for="opt_17" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Parivrtta Ardha Chandrasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_17" type="radio" name="stp_5_select_option" value="Parivrtta Ardha Chandrasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_5 animate__animated animate__fadeInRight animate_100ms">
+                                 <label for="opt_18" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_2.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Parsvottanasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_18" type="radio" name="stp_5_select_option" value="Parsvottanasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_5 animate__animated animate__fadeInRight animate_150ms">
+                                 <label for="opt_19" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Utthita Trikonasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_19" type="radio" name="stp_5_select_option" value="Utthita Trikonasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form_items_content bg-white text-center position-relative step_5 animate__animated animate__fadeInRight animate_200ms">
+                                 <label for="opt_20" class="d-block">
+                                    <span class="form_items_icon">
+                                       <img src="assets/images/item-img/item_4.png" alt="image-not-found">
+                                    </span>
+                                    <span class="form_items_text pt-2 d-block">
+                                       Parivrtta Trikonasana
+                                    </span>
+                                    <span class="service-check-option">
+                                       <span><input id="opt_20" type="radio" name="stp_5_select_option" value="Parivrtta Trikonasana"></span>
+                                    </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <!-- Progress bar -->
+                           <div class="row justify-content-center">
+                              <div class="col-10">
+                                 <div class="step_progress">
+                                    <span>5 of 5 Question</span>
+                                    <div class="step_progress_bar">
+                                       <div class="progress rounded-pill">
+                                          <div class="progress-bar" style="width:100%"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!------------------------- Form button ----------------------------->
+                     <div class="row pt-5">
+                        <div class="col-sm-6 text-center">
+                           <button type="button" class="f_btn prev_btn text-uppercase rounded-pill text-white ms-3" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Previous Question</button>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                           <button type="button" class="f_btn next_btn text-uppercase rounded-pill text-white ms-5" id="nextBtn" onclick="nextPrev(1)">Next Question</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-md-6 d-none d-md-block">
+                  <div class="right_img">
+                     <img src="./assets/images/background/bg_1.png" alt="image-not-found">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- jQuery-js include -->
+      <script src="./assets/js/jquery-3.6.0.min.js"></script>
+      <!-- Bootstrap-js include -->
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <!-- jQuery-validate-js include -->
+      <script src="./assets/js/jquery.validate.min.js"></script>
+      <!-- jQuery-Countdown-js include -->
+      <script src="./assets/js/countdown.js"></script>
+      <!-- Custom-js include -->
+      <script src="./assets/js/script.js"></script>
+   </body>
+   </html>

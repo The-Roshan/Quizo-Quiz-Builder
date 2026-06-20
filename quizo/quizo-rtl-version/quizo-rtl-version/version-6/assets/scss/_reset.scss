@@ -1,0 +1,77 @@
+body{
+  font-weight: 400;
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Jost', sans-serif;
+}
+a,
+button,
+input {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+@keyframes upDown {
+  // animation: upDown 1s infinite alternate;
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rightLeft {
+  // animation: rightLeft 1s infinite alternate;
+  0% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
+/* css animations - end
+================================================== */
+
+/* transition - start ============================= */
+a,
+button {
+  transition: $default_transition;
+}
+/* transition - end ======================= */
+// Custom animation delay ==============
+.animate_25ms{
+  animation-delay: 25ms;
+}
+.animate_50ms{
+  animation-delay: 50ms;
+}
+.animate_100ms{
+  animation-delay: 100ms;
+}
+.animate_150ms{
+  animation-delay: 150ms;
+}
+.animate_200ms{
+  animation-delay: 200ms;
+}
+// Bootstrap setting start
+@media (min-width: 1500px){
+  .container{
+    max-width: 1510px;
+  }
+}

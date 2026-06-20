@@ -1,0 +1,145 @@
+// ================ Multi-step css =================
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background/bg_0.png'), url('../images/background/bg_1.png');
+    background-repeat: no-repeat;
+    background-position: center top -10%, center right;
+    overflow: hidden;
+}
+.step_progress{
+    top: 280px;
+    left: 150px;
+    right: 150px;
+    position: absolute;
+    z-index: 1;
+}
+.step{
+    width: 4.25rem;
+    height: 4.25rem;
+    color: #dedede;
+    font-size: 2.0625rem;
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+    background-color: $white;
+    text-align: center;
+    line-height: 4.25rem;
+    &:after{
+        content: "";
+        width: 950px;
+        height: 25px;
+        top: 50%;
+        left: 65px;
+        transform: translateY(-50%);
+        position: absolute;
+        background-color: #dedede;
+    }
+    &.active{
+        color: $white;
+        background: linear-gradient(#fe6300, #ffae15);
+        &::after{
+            background: linear-gradient(#fe6300, #ffae15);
+        }
+    }
+    &.finish{
+        background: linear-gradient(#fe6300, #ffae15);
+        &::after{
+            background: linear-gradient(#fe6300, #ffae15);
+        }
+    }
+}
+.multisteps_form_panel{
+    display: none;
+}
+.content_box{
+    width: 50%;
+    height: 15rem;
+    margin: 2rem auto;
+    border-radius: 0.625rem;
+    z-index: 9999;
+}
+.form_timer{
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(to right, #fe6500, #ffad14);
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    img{
+        width: 2rem;
+        margin-top: 1.5rem;
+        margin-left: 3rem;
+    }
+    span{
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+    }
+}
+.question_title{
+    h1{
+        font-size: 2.5rem;
+        font-weight: 800;
+        padding: 1rem;
+    }
+}
+.form_items{
+    label{
+        width: 100%;
+        font-size: 1.435625rem;
+        font-weight: 500;
+        padding: 1rem;
+        border: 3px solid #e1e1e1;
+        margin-top: 1rem;
+        cursor: pointer;
+        border-radius: 0.625rem;
+        &:before{
+            content: "\f00c";
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            position: absolute;
+            color: #33b236;
+            font-size: 1.6rem;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            display: none;
+        }
+        &.active{
+            border: 3px solid #33b236;
+            transition: all 0.4s ease-in-out;
+            &:before{
+                display: block;
+            }
+        }
+    }
+    input{
+        display: none;
+    }
+}
+.f_btn{
+    color: $black;
+    font-size: 1.125rem;
+    padding: 1.5rem 2.2rem;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    border-radius: 0.625rem;
+    margin: 0 auto;
+}
+.prev_btn{
+    &:hover{
+        color: $black!important;
+        background: linear-gradient(to right, #ffae15, #fe6400);
+        transition: $default_transition;
+    }
+}
+.next_btn{
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #fe6400, #ffae15);
+    &:hover{
+        color: $black!important;
+        background: linear-gradient(to right, #ffae15, #fe6400);
+        transition: $default_transition;
+    }
+}

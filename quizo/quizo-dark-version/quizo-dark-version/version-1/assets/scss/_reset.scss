@@ -1,0 +1,90 @@
+body{
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Oswald', sans-serif;
+}
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Transition ============================ */
+a,
+button {
+  transition: $default_transition;
+}
+
+// dark version start ==================
+.dark-version.dark-version {
+  background-color: $color-blackis;
+  color: $white;
+  p,
+  label {
+    color: $white !important;
+  }
+  button,
+  input,
+  select,
+  textarea,
+  span
+  {
+    background-color: $color-blackis !important;
+  }
+  .step{
+    background-color: $color-blackis !important;
+    &:after{
+      background-color: $white!important;
+    }
+    &.active {
+      background-color: $defaultColor!important;
+      &::after{
+        background-color: $defaultColor;
+      }
+    }
+  }
+  .form_items{
+    .label-pointer, .label-content{
+      border: 4px solid $white;
+    }
+    .active{
+      .label-pointer, .label-content{
+        border: 4px solid $defaultColor;
+      }
+    }
+  }
+}
+
+// Custom animation delay ==============
+.animate_25ms{
+  animation-delay: 25ms;
+}
+.animate_50ms{
+  animation-delay: 50ms;
+}
+.animate_100ms{
+  animation-delay: 100ms;
+}
+.animate_150ms{
+  animation-delay: 150ms;
+}
+.animate_200ms{
+  animation-delay: 200ms;
+}
+// Media query ==========================
+@media (min-width: 1500px){
+  .container{
+    max-width: 1410px;
+  }
+}
